@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white w-full border-b border-gray-200 ">
-      <div className="max-w-2xl mx-auto sm:px-6 lg:px-8 flex justify-center items-center h-16 px-4 border-r-1 border-l-1 border-gray-200">
+      <div className="max-w-3xl mx-auto sm:px-6 lg:px-8 flex justify-center items-center h-12 px-4 border-r-1 border-l-1 border-gray-200">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 justify-between items-center ">
           {navItems.map((item) => {
