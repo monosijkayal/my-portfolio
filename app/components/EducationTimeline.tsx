@@ -11,17 +11,17 @@ import { GraduationCap } from "lucide-react";
 export default function EducationTimeline() {
   const education = [
     {
-      school: "University of Science — VNUHCM",
-      period: "08.2018 – 2026",
+      school: "JIS University — Kolkata, West Bengal, India",
+      period: "2022 – 2026",
       details: [
-        "Currently studying for a Bachelor's degree in Information Systems.",
-        "Language Proficiency: B1 English Level.",
-        "Achieved several awards, including:",
-        "• Bronze Medal – 10th Design, Manufacturing, and Application Award 2022",
-        "• 2nd Prize – Business Startup Competition 2019",
+        "Currently studying for a Bachelor's degree in Computer Science.",
+        "Language Proficiency: Bengali , Hindi , English.",
       ],
       skills: [
         "C++",
+        "TypeScript",
+        "React",
+        "Node.js",
         "Java",
         "Python",
         "Data Structures",
@@ -36,12 +36,23 @@ export default function EducationTimeline() {
       ],
     },
     {
-      school: "Ly Tu Trong High School for the Gifted — Can Tho City",
-      period: "08.2015 – 06.2018",
+      school: "Sonarpur Vidyapith (Secondary & Higher Secondary education) — Sonarpur, West Bengal, India",
+      period: "2015 - 2022",
+      details: [
+        "Completed Higher Secondary education in Pure Science stream, focusing on Physics, Chemistry, Mathematics, and Computer Science.",
+        "Currently pursuing a Bachelor's degree in Computer Science.",
+        "Proficient in Bengali, Hindi, and English.",
+      ],
+        skills: [
+            "c",
+            "HTML & CSS",
+            "JavaScript",
+            "Python",
+        ],
     },
     {
-      school: "Thuan Hung Secondary School",
-      period: "08.2011 – 06.2015",
+      school: "Baikunthapur Vidyapith (Primary education) — Sonarpur, West Bengal, India",
+      period: "2008 - 2014",
     },
   ];
 
