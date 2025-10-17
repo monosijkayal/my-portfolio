@@ -5,10 +5,11 @@ import GitHubActivity from "./components/GitHubActivity";
 import { CodeXml, MapPin, Phone, Mail, Mars, ArrowUpRight } from "lucide-react";
 import Skills from "./components/Skills";
 import ProjectCard from "./components/ProjectCard";
+import EducationTimeline from "./components/EducationTimeline";
 
 export default function Home() {
   return (
-    <div id = "hero"className="flex flex-col">
+    <div id="hero" className="flex flex-col ">
       <div className="flex justify-center items-center top-0 border-b border-gray-200">
         <div className=" flex w-full max-w-3xl bg-white justify-center items-center border-r border-l border-gray-200">
           <div className="flex flex-col text-black mt-11 mb-11 border-t border-b border-gray-200 w-full max-w-3xl">
@@ -157,7 +158,7 @@ export default function Home() {
 
       <div id="about" className="w-full h-10 border-b bg-gray-200"></div>
 
-      <div  className="w-full h-10 border-b flex items-center justify-center ">
+      <div className="w-full h-10 border-b flex items-center justify-center ">
         <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
           {" "}
           About{" "}
@@ -213,19 +214,30 @@ export default function Home() {
         </div>
       </div>
 
-      <div id = "projects" className="w-full h-10 border-b bg-gray-200"></div>
-      <div>
+      <div id="projects" className="w-full h-10  bg-gray-200"></div>
+      <div className="w-full flex-col border-b flex items-center justify-center ">
+        <div className="w-full border-b h-10 border-gray-200 flex flex-col items-center justify-center ">
+          <div className=" w-full h-10 max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+            {" "}
+            Education{" "}
+          </div>
+        </div>
+          <EducationTimeline />
+      </div>
+
+      <div id="projects" className="w-full h-10 border-b bg-gray-200"></div>
+      <div className="w-full flex-col border-b flex items-center justify-center ">
         <div className="w-full h-10 border-b flex flex-col items-center justify-center ">
           <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
-            <div className = "flex items-center gap-2">
+            <div className="flex items-center gap-2">
               <span>Projects</span>
               <span className="text-gray-400 text-sm">(5)</span>{" "}
             </div>
           </div>
-          <div className = " w-full max-w-3xl">
+        </div>
+        <div className=" w-full max-w-3xl ">
           <ProjectCard />
-          </div>
         </div>
       </div>
     </div>

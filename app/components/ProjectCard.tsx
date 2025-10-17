@@ -39,7 +39,7 @@ export default function ProjectCard() {
   return (
     <section
       id="projects"
-      className="w-full max-w-3xl absolute text-black flex justify-center items-center border border-gray-200"
+      className="w-full max-w-3xl relative text-black flex justify-center items-center border border-gray-200"
     >
       <div className="w-full max-w-3xl">
         <div className="flex flex-col">
