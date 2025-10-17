@@ -4,6 +4,7 @@ import { WordRotate } from "./components/ui/word-rotate";
 import GitHubActivity from "./components/GitHubActivity";
 import { CodeXml, MapPin, Phone, Mail, Mars, ArrowUpRight } from "lucide-react";
 import Skills from "./components/Skills";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
@@ -214,13 +215,16 @@ export default function Home() {
 
       <div id = "projects" className="w-full h-10 border-b bg-gray-200"></div>
       <div>
-        <div className="w-full h-10 border-b flex items-center justify-center ">
-          <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+        <div className="w-full h-10 border-b flex flex-col items-center justify-center ">
+          <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
             <div className = "flex items-center gap-2">
               <span>Projects</span>
               <span className="text-gray-400 text-sm">(5)</span>{" "}
             </div>
+          </div>
+          <div className = " w-full max-w-3xl">
+          <ProjectCard />
           </div>
         </div>
       </div>
