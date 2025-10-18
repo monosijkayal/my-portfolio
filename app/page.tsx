@@ -2,7 +2,15 @@ import React from "react";
 import { MorphingText } from "./components/ui/morphing-text";
 import { WordRotate } from "./components/ui/word-rotate";
 import GitHubActivity from "./components/GitHubActivity";
-import { CodeXml, MapPin, Phone, Mail, Mars, ArrowUpRight } from "lucide-react";
+import {
+  CodeXml,
+  MapPin,
+  Phone,
+  Mail,
+  Mars,
+  ArrowUpRight,
+  FileText,
+} from "lucide-react";
 import Skills from "./components/Skills";
 import ProjectCard from "./components/ProjectCard";
 import EducationTimeline from "./components/EducationTimeline";
@@ -11,27 +19,29 @@ export default function Home() {
   return (
     <div id="hero" className="flex flex-col ">
       <div className="flex justify-center items-center top-0 border-b border-gray-200">
-        <div className=" flex w-full max-w-3xl bg-white justify-center items-center border-r border-l border-gray-200">
+        <div className="flex w-full max-w-3xl bg-white justify-center items-center border-x border-gray-200">
           <div className="flex flex-col text-black mt-11 mb-11 border-t border-b border-gray-200 w-full max-w-3xl">
-            <div className="flex flex-col md:flex-row items-center justify-center w-full border-gray-200 md:space-x-6 space-y-4 md:space-y-0 p-4">
+            <div className="flex flex-row items-center justify-center w-full border-gray-200 ">
               {/* Left side: profile image */}
-              <div className="flex justify-center items-center w-36 h-36 md:w-44 md:h-44 border border-gray-200 rounded-full overflow-hidden">
-                <img
-                  src="ProfileImge.png"
-                  alt="Profile"
-                  className="w-full h-full object-cover rounded-full"
-                />
+              <div className="flex justify-center items-center w-25 h-20 md:w-60 md:h-44  border-r">
+                <div className="flex justify-center items-center w-20 h-20 md:w-44 md:h-44 border border-gray-200 rounded-full overflow-hidden">
+                  <img
+                    src="ProfileImge.png"
+                    alt="Profile"
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
               </div>
 
               {/* Right side: name and role */}
-              <div className="flex flex-col justify-center text-center md:text-left border-t md:border-t-0 md:border-l border-gray-200 md:pl-6 w-full md:w-[590px]">
-                <div className="border-t md:border-t-0 border-b border-gray-200 p-2">
+              <div className="flex flex-col justify-center text-left border-black w-full ">
+                <div className="border-b border-gray-200 p-2">
                   <h1 className="text-2xl md:text-4xl font-mono font-semibold text-gray-900">
                     Monosij Kayal
                   </h1>
                 </div>
 
-                <div className="p-2">
+                <div className="p-2 border-b">
                   <WordRotate
                     className="text-gray-500 text-sm md:text-base"
                     words={[
@@ -81,6 +91,16 @@ export default function Home() {
             <h1 className="text-sm items-center content-center">
               monosijkayal@gmail.com
             </h1>
+          </div>
+          <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 -mt-4">
+            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
+              <FileText className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
+            </div>
+            <div className="inline-block border-2 border-black p-[1px] rounded-sm">
+              <div className="border border-green-800 bg-green-100 px-1 py-0.1 rounded-sm">
+                <h1 className="text-sm text-green-800">Resume</h1>
+              </div>
+            </div>
           </div>
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 -mt-4">
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
@@ -222,7 +242,7 @@ export default function Home() {
             Education{" "}
           </div>
         </div>
-          <EducationTimeline />
+        <EducationTimeline />
       </div>
 
       <div id="projects" className="w-full h-10 border-b bg-gray-200"></div>
