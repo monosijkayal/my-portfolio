@@ -31,8 +31,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white dark:bg-black w-full border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
-      <div className="max-w-3xl mx-auto sm:px-6 lg:px-8 flex justify-center items-center h-12 px-4 border-r border-l border-gray-200 dark:border-gray-700 transition-colors duration-300">
+    <nav className="sticky top-0 z-50 bg-white dark:bg-black w-full border-b border-gray-200 dark:border-[#181818] transition-colors duration-300">
+      <div className="max-w-3xl mx-auto sm:px-6 lg:px-8 flex justify-center items-center h-12 px-4 border-r border-l border-gray-200 dark:border-[#181818] transition-colors duration-300">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 justify-between items-center">
           {navItems.map((item) => (

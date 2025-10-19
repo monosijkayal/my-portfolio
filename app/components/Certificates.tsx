@@ -55,7 +55,7 @@ const Certificates = () => {
   return (
     <section
       id="certificates"
-      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200 dark:border-gray-900"
+      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200 dark:border-[#181818]"
     >
       <div className="w-full max-w-3xl">
         <div className="flex flex-col">
@@ -103,7 +103,7 @@ const Certificates = () => {
       {certificates.length > 4 && (
         <button
           onClick={() => setShowAll(!showAll)}
-          className="mt-2 mb-2 px-3 py-2 text-sm font-medium text-white bg-black hover:bg-gray-900 transition-colors flex items-center gap-2"
+          className="mt-2 mb-2 px-3 py-2 text-sm font-medium text-white bg-black hover:bg-#181818 transition-colors flex items-center gap-2"
         >
           {showAll ? (
             <>

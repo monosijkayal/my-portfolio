@@ -59,7 +59,7 @@ export default function ProjectCard() {
   return (
     <section
       id="projects"
-      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200 dark:border-gray-900"
+      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200 dark:border-[#181818]"
     >
       <div className="w-full max-w-3xl">
         <div className="flex flex-col">
@@ -71,7 +71,7 @@ export default function ProjectCard() {
               className="hover:bg-[#F8F8F8] bg-white dark:bg-black overflow-hidden flex flex-col"
             >
               <AccordionItem value={`item-${index}`} className="border-none">
-                <div className="flex justify-between items-center w-full border-b dark:border-gray-900">
+                <div className="flex justify-between items-center w-full border-b dark:border-[#181818]">
                   {/* Left side: Image + title */}
                   <div className="flex items-center">
                     <div className="flex border-r h-26 p-6 items-center justify-center">
@@ -119,7 +119,7 @@ export default function ProjectCard() {
       {projects.length > 3 && (
   <button
     onClick={() => setShowAll(!showAll)}
-    className="mt-2 mb-2 px-3 py-2 text-sm font-medium text-white bg-black hover:bg-gray-900 transition-colors flex items-center gap-2"
+    className="mt-2 mb-2 px-3 py-2 text-sm font-medium text-white bg-black hover:bg-[#181818] transition-colors flex items-center gap-2"
   >
     {showAll ? (
       <>
