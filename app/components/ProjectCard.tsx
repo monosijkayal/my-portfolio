@@ -59,7 +59,7 @@ export default function ProjectCard() {
   return (
     <section
       id="projects"
-      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200"
+      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200 dark:border-gray-900"
     >
       <div className="w-full max-w-3xl">
         <div className="flex flex-col">
@@ -68,10 +68,10 @@ export default function ProjectCard() {
               key={index}
               type="single"
               collapsible
-              className="hover:bg-[#F8F8F8] bg-white overflow-hidden flex flex-col"
+              className="hover:bg-[#F8F8F8] bg-white dark:bg-black overflow-hidden flex flex-col"
             >
               <AccordionItem value={`item-${index}`} className="border-none">
-                <div className="flex justify-between items-center w-full border-b">
+                <div className="flex justify-between items-center w-full border-b dark:border-gray-900">
                   {/* Left side: Image + title */}
                   <div className="flex items-center">
                     <div className="flex border-r h-26 p-6 items-center justify-center">

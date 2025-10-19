@@ -58,7 +58,7 @@ export default function EducationTimeline() {
 
   return (
     <section className=" w-full max-w-3xl pt-3 pr-3  border-r border-l">
-      <div className=" border-l-1 border-gray-200 ml-6 ">
+      <div className=" border-l-1 border-gray-200 dark:border-gray-800 ml-6 ">
         {education.map((item, i) => (
           <div key={i} className="relative pl-10 mb-8">
             {/* Icon */}

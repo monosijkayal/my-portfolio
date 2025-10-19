@@ -55,14 +55,14 @@ const Certificates = () => {
   return (
     <section
       id="certificates"
-      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200"
+      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200 dark:border-gray-900"
     >
       <div className="w-full max-w-3xl">
         <div className="flex flex-col">
           {visibleCertificates.map((certificate, index) => (
             <div
               key={index}
-              className="hover:bg-[#F8F8F8] bg-white overflow-hidden flex flex-col border-b transition-colors"
+              className="hover:bg-[#F8F8F8] bg-white dark:bg-black overflow-hidden flex flex-col border-b transition-colors"
             >
               <div className="flex justify-between items-center w-full">
                 {/* Left side: Image + title */}

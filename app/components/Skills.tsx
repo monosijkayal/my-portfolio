@@ -44,13 +44,13 @@ export default function Skills() {
   ];
 
   return (
-    <section className="  dark:bg-gray-900">
+    <section className="  dark:bg-black">
       <div className="w-full max-w-3xl p-3 border-r border-l">
         <div className="flex flex-wrap gap-2 ">
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-800 rounded-md text-sm font-medium hover:scale-105 transition-transform duration-200"
+              className="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-black rounded-md text-sm font-medium hover:scale-105 transition-transform duration-200"
             >
               <div className="text-xl">{skill.icon}</div>
               <span className="text-gray-800 dark:text-gray-200">{skill.name}</span>
