@@ -12,7 +12,7 @@ export default function Navbar() {
     { name: "Home", path: "#hero" },
     { name: "About", path: "#about" },
     { name: "Projects", path: "#projects" },
-    { name: "Contact", path: "#contact" },
+    { name: "CLI Mode", path: "#contact" },
   ];
 
   // Smooth scroll handler

@@ -8,10 +8,10 @@ import {
 } from "@/app/components/ui/accordion";
 import { GraduationCap } from "lucide-react";
 
-export default function EducationTimeline() {
+export default function EducationTimeline() { 
   const education = [
     {
-      school: "JIS University — Kolkata, West Bengal, India",
+      school: "JIS University (B.Tech in Computer Science & Enginnering) — Kolkata, West Bengal, India",
       period: "2022 – 2026",
       details: [
         "Currently studying for a Bachelor's degree in Computer Science.",

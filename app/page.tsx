@@ -14,10 +14,13 @@ import {
 import Skills from "./components/Skills";
 import ProjectCard from "./components/ProjectCard";
 import EducationTimeline from "./components/EducationTimeline";
+import Certificates from "./components/Certificates";
 
 export default function Home() {
   return (
     <div id="hero" className="flex flex-col ">
+
+      {/* //Profile section */}
       <div className="flex justify-center items-center top-0 border-b border-gray-200">
         <div className="flex w-full max-w-3xl bg-white justify-center items-center border-x border-gray-200">
           <div className="flex flex-col text-black mt-11 mb-11 border-t border-b border-gray-200 w-full max-w-3xl">
@@ -56,7 +59,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-10 bg-gray-200"></div>
+
+      {/* //persoal info section */}
+      <div
+        className="w-full h-10 "
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(132deg, #F5F5F5 0, #F5F5F5 1px, transparent 2px, transparent 7px)",
+        }}
+      ></div>
       <div className="flex justify-center items-center  border border-gray-200">
         <div className="flex flex-col w-full max-w-3xl -gap-2">
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3">
@@ -95,10 +106,12 @@ export default function Home() {
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
               <FileText className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
             </div>
-            <div className="inline-block border-2 border-green-100 p-[1px] rounded-sm">
-              <div className="flex border border-green-300 items-center gap-0.5 bg-green-100 px-1 py-0.1 rounded-sm">
-                <h1 className="text-sm text-green-800 text-shadow-sm">Resume</h1>
-                <ArrowUpRight className ="size-3 text-green-800" />
+            <div className="flex items-center justify-center p-0.5 border-1 border-green-100   rounded-sm">
+              <div className="flex border border-green-200 items-center gap-0.5 bg-green-100 px-1 py-0.1 rounded-sm">
+                <h1 className="text-sm text-green-700 text-shadow-sm">
+                  Resume
+                </h1>
+                <ArrowUpRight className="size-3 text-green-700" />
               </div>
             </div>
           </div>
@@ -111,7 +124,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-10 border-b bg-gray-200"></div>
+
+      {/* //social links section */}
+      <div
+        className="w-full h-10 border-b "
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(132deg, #F5F5F5 0, #F5F5F5 1px, transparent 2px, transparent 7px)",
+        }}
+      ></div>
       <div className="flex justify-center items-center border-b">
         <div className="w-full max-w-3xl border-l border-r">
           {/* Main grid container — controls responsiveness */}
@@ -175,8 +196,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="about" className="w-full h-10 border-b bg-gray-200"></div>
 
+        {/* //About section  */}
+      <div
+        id = "about"
+        className="w-full h-10 border-b"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(132deg, #F5F5F5 0, #F5F5F5 1px, transparent 2px, transparent 7px)",
+        }}
+      ></div>
       <div className="w-full h-10 border-b flex items-center justify-center ">
         <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
           {" "}
@@ -207,7 +236,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-10 border-b bg-gray-200"></div>
+
+        {/* //Github Contribution section */}
+      <div
+        className="w-full h-10 border-b"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(132deg, #F5F5F5 0, #F5F5F5 1px, transparent 2px, transparent 7px)",
+        }}
+      ></div>
       <div className="flex flex-col justify-center items-center ">
         <div className="w-full h-10 border-b flex items-center justify-center ">
           <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
@@ -220,7 +257,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-10 border-b bg-gray-200"></div>
+
+        {/* Stack section */}
+      <div
+        className="w-full h-10 border-b border-t"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(132deg, #F5F5F5 0, #F5F5F5 1px, transparent 2px, transparent 7px)",
+        }}
+      ></div>
       <div className="w-full flex-col border-b flex items-center justify-center ">
         <div className="w-full h-10 border-b flex items-center justify-center ">
           <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
@@ -233,8 +278,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="projects" className="w-full h-10  bg-gray-200"></div>
-      <div className="w-full flex-col border-b flex items-center justify-center ">
+
+        {/* Education section */}
+      <div
+        className="w-full h-10 border-b"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(132deg, #F5F5F5 0, #F5F5F5 1px, transparent 2px, transparent 7px)",
+        }}
+      ></div>
+      <div className="w-full flex-col flex items-center justify-center ">
         <div className="w-full border-b h-10 border-gray-200 flex flex-col items-center justify-center ">
           <div className=" w-full h-10 max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
@@ -244,8 +297,17 @@ export default function Home() {
         <EducationTimeline />
       </div>
 
-      <div id="projects" className="w-full h-10 border-b bg-gray-200"></div>
-      <div className="w-full flex-col border-b flex items-center justify-center ">
+
+        {/* Projects section */}
+      <div
+        id="projects"
+        className="w-full h-10 border-b border-t"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(132deg, #F5F5F5 0, #F5F5F5 1px, transparent 2px, transparent 7px)",
+        }}
+      ></div>
+      <div className="w-full flex-col flex items-center justify-center ">
         <div className="w-full h-10 border-b flex flex-col items-center justify-center ">
           <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
@@ -257,6 +319,30 @@ export default function Home() {
         </div>
         <div className=" w-full max-w-3xl ">
           <ProjectCard />
+        </div>
+      </div>
+
+
+        {/* Certificates section */}
+      <div
+        className="w-full h-10 border-b border-t"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(132deg, #F5F5F5 0, #F5F5F5 1px, transparent 2px, transparent 7px)",
+        }}
+      ></div>
+      <div className="w-full flex-col flex items-center justify-center ">
+        <div className="w-full h-10 border-b flex flex-col items-center justify-center ">
+          <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+            {" "}
+            <div className="flex items-center gap-2">
+              <span>Certificates</span>
+              <span className="text-gray-400 text-sm">(5)</span>{" "}
+            </div>
+          </div>
+        </div>
+        <div className=" w-full max-w-3xl ">
+          <Certificates />
         </div>
       </div>
     </div>

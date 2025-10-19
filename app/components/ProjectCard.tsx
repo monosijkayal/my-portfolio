@@ -1,12 +1,13 @@
 "use client";
 
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
 } from "@/app/components/ui/accordion";
-import { Link } from 'lucide-react';
+import { Link, ChevronDown, ChevronUp } from "lucide-react";
 
 export default function ProjectCard() {
   const projects = [
@@ -34,21 +35,40 @@ export default function ProjectCard() {
         "A personal portfolio built using Next.js, Tailwind CSS, and Framer Motion. It features a responsive layout, smooth animations, and dynamic sections for projects and gallery.",
       link: "https://github.com/monosij/portfolio",
     },
+    {
+      image: "/ecommerce.png",
+      title: "E-Commerce Store",
+      duration: "05.2025 - 06.2025",
+      description:
+        "A full-featured e-commerce web app built with Next.js, Stripe integration for payments, and Tailwind CSS for UI. Includes product filtering and admin dashboard.",
+      link: "https://github.com/monosij/ecommerce",
+    },
+    {
+      image: "/todoapp.png",
+      title: "To-Do App",
+      duration: "09.2024 - 10.2024",
+      description:
+        "A minimal productivity app using React and Firebase for real-time data sync, featuring drag-and-drop task organization and dark mode support.",
+      link: "https://github.com/monosij/todo-app",
+    },
   ];
+
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
     <section
       id="projects"
-      className="w-full max-w-3xl relative text-black flex justify-center items-center border border-gray-200"
+      className="w-full max-w-3xl relative text-black flex flex-col items-center border-r border-l border-gray-200"
     >
       <div className="w-full max-w-3xl">
         <div className="flex flex-col">
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <Accordion
               key={index}
               type="single"
               collapsible
-              className="border-b hover:bg-gray-200 bg-white overflow-hidden flex flex-col"
+              className="hover:bg-[#F8F8F8] bg-white overflow-hidden flex flex-col"
             >
               <AccordionItem value={`item-${index}`} className="border-none">
                 <div className="flex justify-between items-center w-full border-b">
@@ -62,7 +82,7 @@ export default function ProjectCard() {
                       />
                     </div>
 
-                    <div className=" pr-2 ml-4">
+                    <div className="pr-2 ml-4">
                       <h3 className="text-xl font-semibold">
                         {project.title}
                       </h3>
@@ -73,18 +93,15 @@ export default function ProjectCard() {
                   </div>
 
                   {/* Right side: View Code + Accordion Arrow */}
-                  <div className="flex items-center gap-10 mr-6 ">
+                  <div className="flex items-center gap-10 mr-6">
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className=""
                     >
-                      <Link className = "size-4 text-gray-500"/>
+                      <Link className="size-4 text-gray-500" />
                     </a>
-                    <AccordionTrigger className="!p-0 hover:no-underline text-gray-700">
-                      
-                    </AccordionTrigger>
+                    <AccordionTrigger className="!p-0 hover:no-underline text-gray-700" />
                   </div>
                 </div>
 
@@ -97,6 +114,24 @@ export default function ProjectCard() {
           ))}
         </div>
       </div>
+
+      {/* Show More / Show Less Button */}
+      {projects.length > 3 && (
+  <button
+    onClick={() => setShowAll(!showAll)}
+    className="mt-2 mb-2 px-3 py-2 text-sm font-medium text-white bg-black hover:bg-gray-900 transition-colors flex items-center gap-2"
+  >
+    {showAll ? (
+      <>
+        Show Less <ChevronUp className="w-4 h-4" />
+      </>
+    ) : (
+      <>
+        Show More <ChevronDown className="w-4 h-4" />
+      </>
+    )}
+  </button>
+)}
     </section>
   );
 }
