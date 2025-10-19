@@ -57,7 +57,6 @@ export default function Home() {
       </div>
 
       <div className="w-full h-10 bg-gray-200"></div>
-
       <div className="flex justify-center items-center  border border-gray-200">
         <div className="flex flex-col w-full max-w-3xl -gap-2">
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3">
@@ -96,9 +95,10 @@ export default function Home() {
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
               <FileText className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
             </div>
-            <div className="inline-block border-2 border-black p-[1px] rounded-sm">
-              <div className="border border-green-800 bg-green-100 px-1 py-0.1 rounded-sm">
-                <h1 className="text-sm text-green-800">Resume</h1>
+            <div className="inline-block border-2 border-green-100 p-[1px] rounded-sm">
+              <div className="flex border border-green-300 items-center gap-0.5 bg-green-100 px-1 py-0.1 rounded-sm">
+                <h1 className="text-sm text-green-800 text-shadow-sm">Resume</h1>
+                <ArrowUpRight className ="size-3 text-green-800" />
               </div>
             </div>
           </div>
@@ -112,7 +112,6 @@ export default function Home() {
       </div>
 
       <div className="w-full h-10 border-b bg-gray-200"></div>
-
       <div className="flex justify-center items-center border-b">
         <div className="w-full max-w-3xl border-l border-r">
           {/* Main grid container — controls responsiveness */}
