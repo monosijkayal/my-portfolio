@@ -64,40 +64,41 @@ export default function Home() {
       <div className="flex justify-center items-center  border border-gray-200 dark:border-[#181818]">
         <div className="flex flex-col w-full max-w-3xl -gap-2">
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 ">
-            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
-              <CodeXml className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
+            <div className="flex size-7 items-center justify-center rounded-md border border-gray-100 dark:border-[#282828]">
+              <CodeXml className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />
             </div>
+
             <h1 className="text-sm items-center content-center">
               Aspiring Full Stack Developer | Building Modern Web Experiences
             </h1>
           </div>
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 -mt-4">
-            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
-              <MapPin className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
+            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
+              <MapPin className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
             <h1 className="text-sm items-center content-center">
               Kolkata, India
             </h1>
           </div>
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 -mt-4">
-            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
-              <Phone className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
+            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828] ">
+              <Phone className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
             <h1 className="text-sm items-center content-center">
               +91 90511 09596
             </h1>
           </div>
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 -mt-4">
-            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
-              <Mail className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
+            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
+              <Mail className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
             <h1 className="text-sm items-center content-center">
               monosijkayal@gmail.com
             </h1>
           </div>
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 -mt-4">
-            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
-              <FileText className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
+            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
+              <FileText className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
             <div className="flex items-center justify-center p-0.5 border-1 border-green-100   rounded-sm">
               <div className="flex border border-green-200 items-center gap-0.5 bg-green-100 px-1 py-0.1 rounded-sm">
@@ -109,8 +110,8 @@ export default function Home() {
             </div>
           </div>
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 -mt-4">
-            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100">
-              <Mars className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
+            <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
+              <Mars className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
             <h1 className="text-sm items-center content-center">He / Him</h1>
           </div>
