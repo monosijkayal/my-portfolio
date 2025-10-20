@@ -12,7 +12,7 @@ import { Link, ChevronDown, ChevronUp } from "lucide-react";
 export default function ProjectCard() {
   const projects = [
     {
-      image: "/chatapp.png",
+      image: "/wall-e.png",
       title: "WALL_E",
       duration: "02.2025 - 04.2025",
       description:
@@ -21,11 +21,11 @@ export default function ProjectCard() {
     },
     {
       image: "/project2.jpg",
-      title: "Color Picker Website",
+      title: "Couplespoint",
       duration: "11.2024 - 12.2024",
       description:
         "A React + Tailwind CSS app where users can select, copy, and save custom colors. It includes gradient generation and background previews to help users visualize designs.",
-      link: "https://github.com/monosij/color-picker",
+      link: "https://github.com/monosijkayal/couplespoint",
     },
     {
       image: "/Portfolio.png",
@@ -37,19 +37,19 @@ export default function ProjectCard() {
     },
     {
       image: "/ecommerce.png",
-      title: "E-Commerce Store",
+      title: "Online Bank - All-in-One Finance Hub",
       duration: "05.2025 - 06.2025",
       description:
         "A full-featured e-commerce web app built with Next.js, Stripe integration for payments, and Tailwind CSS for UI. Includes product filtering and admin dashboard.",
-      link: "https://github.com/monosij/ecommerce",
+      link: "online-bank-opal.vercel.app/",
     },
     {
-      image: "/todoapp.png",
-      title: "To-Do App",
+      image: "/chatapp.png",
+      title: "ChatApp",
       duration: "09.2024 - 10.2024",
       description:
         "A minimal productivity app using React and Firebase for real-time data sync, featuring drag-and-drop task organization and dark mode support.",
-      link: "https://github.com/monosij/todo-app",
+      link: "chatapp-k9xg.onrender.com/login",
     },
   ];
 

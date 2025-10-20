@@ -18,7 +18,10 @@ import Certificates from "./components/Certificates";
 
 export default function Home() {
   return (
-    <div id="hero" className="flex flex-col dark:bg-black px-3 sm:px-0 py-3 sm:py-0 ">
+    <div
+      id="hero"
+      className="flex flex-col dark:bg-black px-3 sm:px-0 py-3 sm:py-0 "
+    >
       {/* //Profile section */}
       <div className="flex justify-center items-center top-0 border-b border-gray-200 dark:bg-black dark:border-[#181818]">
         <div className="flex w-full max-w-3xl bg-white dark:bg-black dark:border-[#181818] justify-center items-center border-x border-gray-200">
@@ -124,60 +127,88 @@ export default function Home() {
           {/* Main grid container — controls responsiveness */}
           <div className="grid grid-cols-1 sm:grid-cols-2 bg-white dark:bg-black">
             {/* LinkedIn */}
-            <div className="flex items-center justify-between border-b sm:border-b-0 sm:border-r p-4">
-              <div className="flex items-center space-x-4">
-                <div className="flex justify-center items-center w-10 h-10">
-                  <img src="LinkedIn.png" alt="LinkedIn" />
+            <a
+              href="https://www.linkedin.com/in/monosij-kayal-222359276/ "
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="flex items-center justify-between border-b sm:border-b-0 sm:border-r p-4">
+                <div className="flex items-center space-x-4">
+                  <div className="flex justify-center items-center w-10 h-10">
+                    <img src="LinkedIn.png" alt="LinkedIn" />
+                  </div>
+                  <div className="flex flex-col">
+                    <h1 className="font-semibold">LinkedIn</h1>
+                    <p className="text-gray-600">@monosijkayal</p>  
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <h1 className="font-semibold">LinkedIn</h1>
-                  <p className="text-gray-600">@monosijkayal</p>
-                </div>
+                <ArrowUpRight className="ml-4 size-4" />
               </div>
-              <ArrowUpRight className="ml-4" />
-            </div>
+            </a>
 
             {/* Twitter */}
-            <div className="flex items-center justify-between border-b sm:border-b-0 p-4">
-              <div className="flex items-center space-x-4">
-                <div className="flex justify-center items-center w-10 h-10">
-                  <img src="twitter.png" alt="Twitter" />
+            <a
+              href="https://x.com/Monosijkayal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="flex items-center justify-between border-b sm:border-b-0 p-4">
+                <div className="flex items-center space-x-4">
+                  <div className="flex justify-center items-center w-10 h-10">
+                    <img src="twitter.png" alt="Twitter" />
+                  </div>
+                  <div className="flex flex-col">
+                    <h1 className="font-semibold">Twitter</h1>
+                    <p className="text-gray-600">@monosijkayal</p>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <h1 className="font-semibold">Twitter</h1>
-                  <p className="text-gray-600">@monosijkayal</p>
-                </div>
+                <ArrowUpRight className="ml-4 size-4" />
               </div>
-              <ArrowUpRight className="ml-4" />
-            </div>
+            </a>
 
             {/* Leetcode */}
-            <div className="flex items-center justify-between border-t sm:border-t sm:border-r p-4">
-              <div className="flex items-center space-x-4">
-                <div className="flex justify-center items-center w-10 h-10">
-                  <img src="leetcode.jpg" alt="Leetcode" />
+            <a
+              href="https://leetcode.com/u/monosij_leetcode/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="flex items-center justify-between border-t sm:border-t sm:border-r p-4">
+                <div className="flex items-center space-x-4">
+                  <div className="flex justify-center items-center w-10 h-10">
+                    <img src="leetcode.jpg" alt="Leetcode" />
+                  </div>
+                  <div className="flex flex-col">
+                    <h1 className="font-semibold">Leetcode</h1>
+                    <p className="text-gray-600">@monosijkayal</p>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <h1 className="font-semibold">Leetcode</h1>
-                  <p className="text-gray-600">@monosijkayal</p>
-                </div>
+                <ArrowUpRight className="ml-4 size-4" />
               </div>
-              <ArrowUpRight className="ml-4" />
-            </div>
+            </a>
 
             {/* Github */}
-            <div className="flex items-center justify-between border-t sm:border-t p-4">
-              <div className="flex items-center space-x-4">
-                <div className="flex justify-center items-center w-10 h-10">
-                  <img src="github.png" alt="Github" />
+            <a
+              href="https://github.com/monosijkayal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="flex items-center justify-between border-t sm:border-t p-4">
+                <div className="flex items-center space-x-4">
+                  <div className="flex justify-center items-center w-10 h-10">
+                    <img src="github.png" alt="Github" />
+                  </div>
+                  <div className="flex flex-col">
+                    <h1 className="font-semibold">Github</h1>
+                    <p className="text-gray-600">@monosijkayal</p>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <h1 className="font-semibold">Github</h1>
-                  <p className="text-gray-600">@monosijkayal</p>
-                </div>
+                <ArrowUpRight className="ml-4 size-4" />
               </div>
-              <ArrowUpRight className="ml-4" />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -192,7 +223,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center border-b">
         <div className="flex w-full max-w-3xl border-r border-l  border-gray-200 dark:border-[#181818] p-6 bg-white dark:bg-black">
-          <p className = "text-sm">
+          <p className="text-sm">
             Hello, World! I’m Monosij Kayal — a passionate Full-Stack Developer
             driven by the mission to craft scalable, high-performance, and
             visually engaging web applications that make technology feel
