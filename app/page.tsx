@@ -119,7 +119,7 @@ export default function Home() {
 
       {/* //social links section */}
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
-      <div className="flex justify-center items-center border-b ">
+      <div className="flex justify-center items-center border-b border-t">
         <div className="w-full max-w-3xl border-l border-r">
           {/* Main grid container — controls responsiveness */}
           <div className="grid grid-cols-1 sm:grid-cols-2 bg-white dark:bg-black">
@@ -184,7 +184,7 @@ export default function Home() {
 
       {/* //About section  */}
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
-      <div className="w-full h-10 border-b flex items-center justify-center ">
+      <div className="w-full h-10 border-b border-t flex items-center justify-center ">
         <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
           {" "}
           About{" "}
@@ -217,7 +217,7 @@ export default function Home() {
       {/* //Github Contribution section */}
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
       <div className="flex flex-col justify-center items-center ">
-        <div className="w-full h-10 border-b flex items-center justify-center ">
+        <div className="w-full h-10 border-b border-t flex items-center justify-center ">
           <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
             My Github Contribution{" "}
@@ -229,8 +229,8 @@ export default function Home() {
       </div>
 
       {/* Stack section */}
-      <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
-      <div className="w-full flex-col border-b flex items-center justify-center ">
+      <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300 border-t dark:border-[#181818]"></div>
+      <div className="w-full flex-col border-b border-t flex items-center justify-center ">
         <div className="w-full h-10 border-b flex items-center justify-center ">
           <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
@@ -245,7 +245,7 @@ export default function Home() {
       {/* Education section */}
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
       <div className="w-full flex-col flex items-center justify-center ">
-        <div className="w-full border-b h-10 border-gray-200 dark:border-[#181818] flex flex-col items-center justify-center ">
+        <div className="w-full border-b border-t h-10 border-gray-200 dark:border-[#181818] flex flex-col items-center justify-center ">
           <div className=" w-full h-10 max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
             Education{" "}
@@ -257,7 +257,7 @@ export default function Home() {
       {/* Projects section */}
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
       <div className="w-full flex-col flex items-center justify-center ">
-        <div className="w-full h-10 border-b flex flex-col items-center justify-center ">
+        <div className="w-full h-10 border-b border-t flex flex-col items-center justify-center ">
           <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
             <div className="flex items-center gap-2">
@@ -272,9 +272,9 @@ export default function Home() {
       </div>
 
       {/* Certificates section */}
-      <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
+      <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300 border-t dark:border-[#181818]"></div>
       <div className="w-full flex-col flex items-center justify-center ">
-        <div className="w-full h-10 border-b flex flex-col items-center justify-center ">
+        <div className="w-full h-10 border-b border-t flex flex-col items-center justify-center ">
           <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
             <div className="flex items-center gap-2">
