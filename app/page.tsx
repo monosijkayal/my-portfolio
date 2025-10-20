@@ -99,12 +99,12 @@ export default function Home() {
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
               <FileText className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
-            <div className="flex items-center justify-center p-0.5 border-1 border-green-100   rounded-sm">
-              <div className="flex border border-green-200 items-center gap-0.5 bg-green-100 px-1 py-0.1 rounded-sm">
-                <h1 className="text-sm text-green-700 text-shadow-sm">
+            <div className="flex items-center justify-center p-0.5 border-1 border-green-100 dark:border-[#043915]  rounded-sm">
+              <div className="flex border border-green-200 dark:border-[#4C763B] items-center gap-0.5 bg-green-100 dark:bg-[#043915] px-1 py-0.1 rounded-sm">
+                <h1 className="text-sm text-green-700 dark:text-[#F8F7BA] text-shadow-sm">
                   Resume
                 </h1>
-                <ArrowUpRight className="size-3 text-green-700" />
+                <ArrowUpRight className="size-3 text-green-700 dark:text-[#B0CE88]" />
               </div>
             </div>
           </div>
