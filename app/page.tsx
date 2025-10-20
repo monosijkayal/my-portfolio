@@ -192,7 +192,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center border-b">
         <div className="flex w-full max-w-3xl border-r border-l  border-gray-200 dark:border-[#181818] p-6 bg-white dark:bg-black">
-          <p>
+          <p className = "text-sm">
             Hello, World! I’m Monosij Kayal — a passionate Full-Stack Developer
             driven by the mission to craft scalable, high-performance, and
             visually engaging web applications that make technology feel

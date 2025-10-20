@@ -15,6 +15,7 @@ export default function EducationTimeline() {
       period: "2022 – 2026",
       details: [
         "Currently studying for a Bachelor's degree in Computer Science.",
+        "Current CGPA: 8.5/10.",
         "Language Proficiency: Bengali , Hindi , English.",
       ],
       skills: [
@@ -40,6 +41,7 @@ export default function EducationTimeline() {
       period: "2015 - 2022",
       details: [
         "Completed Higher Secondary education in Pure Science stream, focusing on Physics, Chemistry, Mathematics, and Computer Science.",
+        "Marks obtained: 76% in Higher Secondary and 82% in Secondary examinations.",
         "Currently pursuing a Bachelor's degree in Computer Science.",
         "Proficient in Bengali, Hindi, and English.",
       ],
@@ -62,8 +64,8 @@ export default function EducationTimeline() {
         {education.map((item, i) => (
           <div key={i} className="relative pl-10 mb-8">
             {/* Icon */}
-            <div className="absolute -left-[15px] flex border size-7 items-center justify-center rounded-md border-gray-100">
-              <GraduationCap className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100" />{" "}
+            <div className="absolute -left-[15px] flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
+              <GraduationCap className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100  dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
 
             {/* Accordion */}
@@ -92,7 +94,7 @@ export default function EducationTimeline() {
                       {item.skills.map((s, idx) => (
                         <span
                           key={idx}
-                          className="text-xs bg-gray-200 rounded-full px-2 py-1"
+                          className="text-xs bg-gray-200 dark:bg-black border rounded-full px-2 py-1"
                         >
                           {s}
                         </span>
