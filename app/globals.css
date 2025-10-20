@@ -120,3 +120,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* In globals.css or app/globals.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+

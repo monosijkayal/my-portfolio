@@ -18,7 +18,7 @@ import Certificates from "./components/Certificates";
 
 export default function Home() {
   return (
-    <div id="hero" className="flex flex-col dark:bg-black ">
+    <div id="hero" className="flex flex-col dark:bg-black px-3 sm:px-0 py-3 sm:py-0 ">
       {/* //Profile section */}
       <div className="flex justify-center items-center top-0 border-b border-gray-200 dark:bg-black dark:border-[#181818]">
         <div className="flex w-full max-w-3xl bg-white dark:bg-black dark:border-[#181818] justify-center items-center border-x border-gray-200">
@@ -60,7 +60,6 @@ export default function Home() {
 
       {/* //persoal info section */}
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
-
       <div className="flex justify-center items-center  border border-gray-200 dark:border-[#181818]">
         <div className="flex flex-col w-full max-w-3xl -gap-2">
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 ">

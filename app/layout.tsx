@@ -35,7 +35,7 @@ export default function RootLayout({
         >
           <div className="flex justify-center min-h-screen">
             {/* Common width + borders */}
-            <div className="w-full max-w-full border-x border-gray-100">
+            <div className="w-full max-w-full">
               <Navbar />
               <main>{children}</main>
             </div>
