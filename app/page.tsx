@@ -286,7 +286,7 @@ export default function Home() {
       </div>
 
       {/* Projects section */}
-      <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
+      <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300 border-t border-gray-200 dark:border-[#181818]"></div>
       <div className="w-full flex-col flex items-center justify-center ">
         <div className="w-full h-10 border-b border-t flex flex-col items-center justify-center ">
           <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
