@@ -279,7 +279,7 @@ export default function Home() {
         <div className="w-full border-b border-t h-10 border-gray-200 dark:border-[#181818] flex flex-col items-center justify-center ">
           <div className=" w-full h-10 max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
             {" "}
-            Education{" "}
+            Experience{" "}
           </div>
         </div>
         <EducationTimeline />
