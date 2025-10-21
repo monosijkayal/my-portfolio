@@ -12,12 +12,12 @@ export default function EducationTimeline() {
   // ---------------- HACKATHONS ----------------
   const hackathons = [
     {
-      event: "Smart India Hackathon 2024 — National Level",
-      period: "August 2024",
+      event: "Innofusion 2.0",
+      period: "August 2025",
       details: [
-        "Participated in the national-level Smart India Hackathon representing JIS University.",
-        "Worked on a government-proposed problem statement related to smart city management.",
-        "Developed a MERN-based web platform to optimize waste collection routes.",
+        "Participated in the Innofusion 2.0 Hackathon representing JIS University.",
+        "Worked on a AI-based problem statement related to report creation of LAW.",
+        "Developed a MERN-based web platform to generate suitable report of every right and aciton.",
         "Gained hands-on experience in teamwork, problem solving, and agile development.",
       ],
       skills: [
@@ -29,8 +29,8 @@ export default function EducationTimeline() {
       ],
     },
     {
-      event: "CodeNova Hackathon — Intra University",
-      period: "April 2024",
+      event: "Hexafalls Hackathon' 25",
+      period: "June 2025",
       details: [
         "Secured 2nd position among 50+ teams in JIS University’s internal hackathon.",
         "Developed a real-time chat app using React, Firebase, and Tailwind CSS.",
