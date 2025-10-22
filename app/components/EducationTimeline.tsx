@@ -17,10 +17,25 @@ export default function EducationTimeline() {
       details: [
         "Participated in the Innofusion 2.0 Hackathon representing JIS University.",
         "Worked on a AI-based problem statement related to report creation of LAW.",
+        "Verified Advocate Profiles & Search",
+        "Real-time Video Consultation (ZeoCloud)",
+        "Live Chat via Socket.IO",
+        "Gemini AI–powered Document Drafting & Translation",
+        "Role-based Access (User / Advocate / Admin)",
+        "Legal Journal Publishing for Advocates",
         "Developed a MERN-based web platform to generate suitable report of every right and aciton.",
         "Gained hands-on experience in teamwork, problem solving, and agile development.",
       ],
       skills: [
+        "Next.js (App Router)",
+        "React & Tailwind CSS",
+        "Prisma + PostgreSQL",
+        "NextAuth.js",
+        "Socket.IO",
+        "Gemini API (Google)",
+        "ZeoCloud (Video infra)",
+        "Cloudinary (Image storage)",
+        "TypeScript",
         "MERN Stack",
         "Problem Solving",
         "API Integration",
@@ -33,10 +48,15 @@ export default function EducationTimeline() {
       period: "June 2025",
       details: [
         "Secured 2nd position among 50+ teams in JIS University’s internal hackathon.",
-        "Developed a real-time chat app using React, Firebase, and Tailwind CSS.",
+        "Developed a real-time chat app using NextJs and Tailwind CSS.",
         "Focused on authentication workflows and smooth user experience.",
+        "Converts agricultural assets (like land, crops, equipment, or produce) into digital tokens.",
+        "Each token represents a verified, traceable share of the real-world asset.",
+        "Enables international and domestic investors to directly invest in Indian agriculture through secure blockchain transactions.",
+        "Reduces middlemen and ensures transparency.",
+        "All investments, profit-sharing, and payouts are handled automatically using smart contracts.",
       ],
-      skills: ["React", "Firebase", "Tailwind CSS", "Authentication", "Git"],
+      skills: ["Solidity", "React", "Node.js", "IPFS", "Chainlink", "Base (Ethereum L2)", "Hardhat", "OpenZeppelin", "Web3.js" ],
     },
   ];
 
@@ -125,7 +145,12 @@ export default function EducationTimeline() {
     <section className="w-full max-w-3xl pt-3  border-r border-l">
       {/* ---------------- HACKATHONS ---------------- */}
       <div className="w-full max-w-3xl border-b">
-      <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5"><span><div className = "w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-500"></div></span>Hackathons</h2>
+        <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5">
+          <span>
+            <div className="w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-500"></div>
+          </span>
+          Hackathons
+        </h2>
         <div className="relative ml-6 mb-10 pr-3">
           {/* Gradient vertical border line */}
           <div className="pointer-events-none absolute  top-0 bottom-0 w-[1px] rounded-full bg-gradient-to-b from-gray-300 via-gray-200 to-white dark:from-[#1e1e1e] dark:via-[#1e1e1e] dark:to-black" />
@@ -179,7 +204,12 @@ export default function EducationTimeline() {
 
       {/* ---------------- EVENTS ---------------- */}
       <div className="w-full max-w-3xl border-b mb-3 pt-3">
-        <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5"><span><div className = "w-2 h-2 rounded-full  bg-gray-300 dark:bg-gray-500"></div></span>Events</h2>
+        <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5">
+          <span>
+            <div className="w-2 h-2 rounded-full  bg-gray-300 dark:bg-gray-500"></div>
+          </span>
+          Events
+        </h2>
         <div className="relative ml-6 mb-10 pr-3">
           {/* Gradient vertical border line */}
           <div className="pointer-events-none absolute  top-0 bottom-0 w-[1px] rounded-full bg-gradient-to-b from-gray-300 via-gray-300 to-white dark:from-[#1e1e1e] dark:via-[#1e1e1e] dark:to-black" />
@@ -234,10 +264,15 @@ export default function EducationTimeline() {
       </div>
 
       {/* ---------------- EDUCATION ---------------- */}
-      <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5"><span><div className = "w-2 h-2 rounded-full  bg-gray-300 dark:bg-gray-500"></div></span>Education</h2>
+      <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5">
+        <span>
+          <div className="w-2 h-2 rounded-full  bg-gray-300 dark:bg-gray-500"></div>
+        </span>
+        Education
+      </h2>
       <div className="relative ml-6 mb-10 pr-3">
-          {/* Gradient vertical border line */}
-          <div className="pointer-events-none absolute  top-0 bottom-0 w-[1px] rounded-full bg-gradient-to-b from-gray-300 via-gray-300 to-white dark:from-[#1e1e1e] dark:via-[#1e1e1e] dark:to-black" />
+        {/* Gradient vertical border line */}
+        <div className="pointer-events-none absolute  top-0 bottom-0 w-[1px] rounded-full bg-gradient-to-b from-gray-300 via-gray-300 to-white dark:from-[#1e1e1e] dark:via-[#1e1e1e] dark:to-black" />
         {education.map((item, i) => (
           <div key={i} className="relative pl-10 mb-8">
             {/* Icon */}
