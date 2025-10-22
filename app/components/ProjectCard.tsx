@@ -17,10 +17,10 @@ export default function ProjectCard() {
       duration: "02.2025 - 04.2025",
       description:
         "A MERN-based social media app that includes authentication, real-time chat, and post-sharing features. Built with React, Node.js, MongoDB, and Socket.io for real-time messaging functionality.",
-      link: "https://github.com/monosij/social-app",
+      link: "https://wall-e-0.web.app/",
     },
     {
-      image: "/project2.jpg",
+      image: "/couplespoint.png",
       title: "Couplespoint",
       duration: "11.2024 - 12.2024",
       description:
@@ -36,7 +36,7 @@ export default function ProjectCard() {
       link: "https://github.com/monosij/portfolio",
     },
     {
-      image: "/ecommerce.png",
+      image: "/onlinebank.png",
       title: "Online Bank - All-in-One Finance Hub",
       duration: "05.2025 - 06.2025",
       description:

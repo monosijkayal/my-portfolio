@@ -56,34 +56,68 @@ export default function EducationTimeline() {
         "Reduces middlemen and ensures transparency.",
         "All investments, profit-sharing, and payouts are handled automatically using smart contracts.",
       ],
-      skills: ["Solidity", "React", "Node.js", "IPFS", "Chainlink", "Base (Ethereum L2)", "Hardhat", "OpenZeppelin", "Web3.js" ],
+      skills: [
+        "Solidity",
+        "React",
+        "Node.js",
+        "IPFS",
+        "Chainlink",
+        "Base (Ethereum L2)",
+        "Hardhat",
+        "OpenZeppelin",
+        "Web3.js",
+      ],
     },
   ];
 
   // ---------------- EVENTS ----------------
   const events = [
     {
-      title: "TechFest 2024 — JIS University",
-      period: "March 2024",
+      title: "Core Connect Campus Edition - TIU, Kolkata, WB",
+      period: "May, 2025",
       details: [
-        "Participated in the annual TechFest organized by JIS University.",
-        "Presented a project on AI-powered handwriting recognition.",
-        "Interacted with judges from the industry and gained presentation experience.",
+        "Hands-on Move language workshops to learn smart contract development on the Aptos blockchain.",
+        "dApp building sessions guided by mentors from Rise In and Aptos.",
+        "Web3 networking opportunities with developers, blockchain enthusiasts, and industry experts.",
+        "Gained insights into decentralized application architecture and Aptos ecosystem tools.",
       ],
-      skills: ["AI", "Python", "Project Presentation", "Public Speaking"],
+      skills: [
+        "AI",
+        "Web3",
+        "Blockchain",
+        "Project Presentation",
+        "Public Speaking",
+        "Networking",
+      ],
     },
     {
-      title: "Developer Student Club Workshop — Google DSC",
-      period: "December 2023",
+      title: "Move Build Station Kolkata - Ideapod, Kolkata, WB",
+      period: "May, 2025",
       details: [
-        "Attended a 2-day workshop on Modern Web Development organized by Google DSC JIS University.",
-        "Learned about React hooks, Firebase authentication, and API integration.",
+        "Attended Move language workshops, hands-on dApp building sessions, and Web3 networking events.",
+        "Pre-hackathon meetup by Rise In x Aptos — Move workshops, dApp building, and Web3 networking.",
       ],
-      skills: ["React", "Firebase", "JavaScript", "API Handling"],
+      skills: ["Web3", "Blockchain", "TypeScript", "API Handling"],
     },
     {
-      title: "Blockchain Awareness Seminar — Kolkata",
-      period: "July 2023",
+      title: "DroidFest Kolkata 2025 - TIU, Kolkata, WB",
+      period: "April, 2025",
+      details: [
+        "An interactive tech event bringing together Android developers and enthusiasts for expert talks, practical workshops, and community collaboration to explore the latest in Android innovation.",
+        "DroidFest — A meetup uniting Android and tech enthusiasts through talks, workshops, and community engagement.",
+      ],
+      skills: [
+        "Blockchain",
+        "Web3 Basics",
+        "Smart Contracts",
+        "Python",
+        "Cotlin",
+        "Android Development",
+      ],
+    },
+    {
+      title: "Build On Aptos Bootcamp - RCCIIT, Kolkata, WB",
+      period: "April, 2025",
       details: [
         "Attended a seminar introducing the fundamentals of blockchain and Web3.",
         "Gained knowledge on decentralized networks, mining, and smart contracts.",
@@ -103,6 +137,8 @@ export default function EducationTimeline() {
         "Current CGPA: 8.5/10.",
         "Language Proficiency: Bengali, Hindi, English.",
       ],
+      marksheet:
+        "https://drive.google.com/file/d/your-btech-marksheet-link/view",
       skills: [
         "C++",
         "TypeScript",
@@ -125,9 +161,11 @@ export default function EducationTimeline() {
       school:
         "Sonarpur Vidyapith (Secondary & Higher Secondary education) — Sonarpur, West Bengal, India",
       period: "2015 - 2022",
+      marksheet:
+      "https://drive.google.com/file/d/1SHyMa5vdXGwFiUK1hdveIwrJfI-8cGiM/preview",
       details: [
         "Completed Higher Secondary education in Pure Science stream, focusing on Physics, Chemistry, Mathematics, and Computer Science.",
-        "Marks obtained: 76% in Higher Secondary and 82% in Secondary examinations.",
+        "Marks obtained: 82% in Higher Secondary and 76% in Secondary examinations.",
         "Currently pursuing a Bachelor's degree in Computer Science.",
         "Proficient in Bengali, Hindi, and English.",
       ],
@@ -137,6 +175,8 @@ export default function EducationTimeline() {
       school:
         "Baikunthapur Vidyapith (Primary education) — Sonarpur, West Bengal, India",
       period: "2008 - 2014",
+      marksheet:
+      "https://drive.google.com/file/d/your-btech-marksheet-link/view",
     },
   ];
 
@@ -294,6 +334,22 @@ export default function EducationTimeline() {
                 </div>
 
                 <AccordionContent>
+                <div className="w-20 mt-2 p-0.5 border-1 border-green-100 dark:border-[#043915]  rounded-sm cursor-pointer">
+                <div className="flex border border-green-200 dark:border-[#4C763B] items-center gap-0.5 bg-green-100 dark:bg-[#043915] px-1 py-0.1 rounded-sm">
+                  {item.marksheet && (
+                    <a
+                      href={item.marksheet}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-600 hover:underline text-sm"
+                    >
+                      Marksheet
+                    </a>
+                                  
+                  )}
+                  </div>
+                  </div>
+
                   {item.details && (
                     <ul className="list-disc ml-5 mt-3 text-sm text-gray-700 space-y-1">
                       {item.details.map((d, idx) => (
