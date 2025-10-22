@@ -51,9 +51,9 @@ export default function Navbar() {
           ))}
 
           {/* Login Button */}
-          <div className="px-2 rounded-md bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white cursor-pointer transition-colors">
+          {/* <div className="px-2 rounded-md bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white cursor-pointer transition-colors">
             <button className="text-sm cursor-pointer">Login</button>
-          </div>
+          </div> */}
 
           {/* Mode Toggle Button */}
           <ModeToggle />
