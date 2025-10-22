@@ -102,12 +102,19 @@ export default function Home() {
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
               <FileText className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
-            <div className="flex items-center justify-center p-0.5 border-1 border-green-100 dark:border-[#043915]  rounded-sm">
+            <div className="flex items-center justify-center p-0.5 border-1 border-green-100 dark:border-[#043915]  rounded-sm cursor-pointer">
               <div className="flex border border-green-200 dark:border-[#4C763B] items-center gap-0.5 bg-green-100 dark:bg-[#043915] px-1 py-0.1 rounded-sm">
-                <h1 className="text-sm text-green-700 dark:text-[#F8F7BA] text-shadow-sm">
-                  Resume
-                </h1>
-                <ArrowUpRight className="size-3 text-green-700 dark:text-[#B0CE88]" />
+                <a
+                  href="https://drive.google.com/file/d/1ERWYZG7OOfryK2z5OohUFsMXnbqWGs5c/preview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex border-green-200 dark:border-[#4C763B] items-center gap-0.5 bg-green-100 dark:bg-[#043915] px-1 py-0.1 rounded-sm hover:bg-green-200 dark:hover:bg-[#064a1d] transition"
+                >
+                  <h1 className="text-sm text-green-700 dark:text-[#F8F7BA] text-shadow-sm">
+                    Resume
+                  </h1>
+                  <ArrowUpRight className="size-3 text-green-700 dark:text-[#B0CE88]" />
+                </a>
               </div>
             </div>
           </div>
@@ -140,7 +147,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">LinkedIn</h1>
-                    <p className="text-gray-600">@monosijkayal</p>  
+                    <p className="text-gray-600">@monosijkayal</p>
                   </div>
                 </div>
                 <ArrowUpRight className="ml-4 size-4" />
