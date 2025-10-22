@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import GitHubCalendar from "react-github-calendar";
@@ -11,7 +12,6 @@ export default function GitHubActivity() {
     setMounted(true);
   }, []);
 
-  // Prevent SSR mismatch — render only on client
   if (!mounted) {
     return (
       <div className="h-[120px] w-full flex items-center justify-center text-gray-400 text-sm">
@@ -22,13 +22,21 @@ export default function GitHubActivity() {
 
   return (
     <div className="w-full max-w-3xl overflow-x-auto no-scrollbar">
-      <div className="min-w-[600px] sm:min-w-full">
+      <div className="flex items-center justify-center min-w-[600px] sm:min-w-full">
         <GitHubCalendar
           username="monosijkayal"
           colorScheme={theme === "dark" ? "dark" : "light"}
-          blockSize={10}
-          blockMargin={4}
-          fontSize={14}
+          blockSize={11}
+          blockMargin={2}
+          fontSize={12}
+          showWeekdayLabels
+          renderBlock={(block, activity) =>
+            React.cloneElement(block, {
+              title: `${activity.count} contribution${
+                activity.count !== 1 ? "s" : ""
+              } on ${activity.date}`,
+            })
+          }
         />
       </div>
     </div>

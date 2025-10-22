@@ -22,7 +22,7 @@ export default function ProjectCard() {
     {
       image: "/couplespoint.png",
       title: "Couplespoint",
-      duration: "11.2024 - 12.2024",
+      duration: "11.2024 - present",
       description:
         "A React + Tailwind CSS app where users can select, copy, and save custom colors. It includes gradient generation and background previews to help users visualize designs.",
       link: "https://github.com/monosijkayal/couplespoint",
