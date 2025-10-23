@@ -216,7 +216,7 @@ export default function EducationTimeline() {
 
                   <AccordionContent>
                     {item.details && (
-                      <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 space-y-1">
+                      <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 dark:text-gray-500 space-y-1">
                         {item.details.map((d, idx) => (
                           <li key={idx}>{d}</li>
                         ))}
@@ -277,7 +277,7 @@ export default function EducationTimeline() {
 
                   <AccordionContent>
                     {item.details && (
-                      <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 space-y-1">
+                      <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 dark:text-gray-500 space-y-1">
                         {item.details.map((d, idx) => (
                           <li key={idx}>{d}</li>
                         ))}
@@ -351,7 +351,7 @@ export default function EducationTimeline() {
                   </div>
 
                   {item.details && (
-                    <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 space-y-1">
+                    <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 dark:text-gray-500 space-y-1">
                       {item.details.map((d, idx) => (
                         <li key={idx}>{d}</li>
                       ))}
