@@ -216,7 +216,7 @@ export default function EducationTimeline() {
 
                   <AccordionContent>
                     {item.details && (
-                      <ul className="list-disc ml-5 mt-3 text-sm text-gray-700 space-y-1">
+                      <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 space-y-1">
                         {item.details.map((d, idx) => (
                           <li key={idx}>{d}</li>
                         ))}
@@ -227,7 +227,7 @@ export default function EducationTimeline() {
                         {item.skills.map((s, idx) => (
                           <span
                             key={idx}
-                            className="text-xs bg-gray-200 dark:bg-black border rounded-full px-2 py-1"
+                            className="text-xs bg-gray-200 font-mono dark:bg-black border rounded-full px-2 py-1"
                           >
                             {s}
                           </span>
@@ -277,7 +277,7 @@ export default function EducationTimeline() {
 
                   <AccordionContent>
                     {item.details && (
-                      <ul className="list-disc ml-5 mt-3 text-sm text-gray-700 space-y-1">
+                      <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 space-y-1">
                         {item.details.map((d, idx) => (
                           <li key={idx}>{d}</li>
                         ))}
@@ -288,7 +288,7 @@ export default function EducationTimeline() {
                         {item.skills.map((s, idx) => (
                           <span
                             key={idx}
-                            className="text-xs bg-gray-200 dark:bg-black border rounded-full px-2 py-1"
+                            className="text-xs font-mono bg-gray-200 dark:bg-black border rounded-full px-2 py-1"
                           >
                             {s}
                           </span>
@@ -351,7 +351,7 @@ export default function EducationTimeline() {
                   </div>
 
                   {item.details && (
-                    <ul className="list-disc ml-5 mt-3 text-sm text-gray-700 space-y-1">
+                    <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 space-y-1">
                       {item.details.map((d, idx) => (
                         <li key={idx}>{d}</li>
                       ))}
@@ -362,7 +362,7 @@ export default function EducationTimeline() {
                       {item.skills.map((s, idx) => (
                         <span
                           key={idx}
-                          className="text-xs bg-gray-200 dark:bg-black border rounded-full px-2 py-1"
+                          className="text-xs font-mono bg-gray-200 dark:bg-black border rounded-full px-2 py-1"
                         >
                           {s}
                         </span>
