@@ -16,7 +16,7 @@ export default function ProjectCard() {
       title: "WALL_E",
       duration: "02.2025 - 04.2025",
       description: (
-        <p className="font-mono text-[15px] leading-relaxed text-gray-800 dark:text-gray-100 whitespace-pre-line">
+        <p className="font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-400 whitespace-pre-line">
           My{" "}
           <span className="font-semibold text-green-500">
             Social Media Platform
@@ -77,7 +77,7 @@ export default function ProjectCard() {
       title: "Portfolio Website",
       duration: "01.2025 - Present",
       description: (
-        <p className="font-mono text-[15px] leading-relaxed text-gray-800 dark:text-gray-100 whitespace-pre-line max-w-3xl">
+        <p className="font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-400 whitespace-pre-line max-w-3xl">
           <span className="font-semibold text-green-500">
             🧑‍💻 Personal Portfolio — Showcasing My Journey
           </span>
@@ -146,7 +146,7 @@ export default function ProjectCard() {
       title: "Online Bank - All-in-One Finance Hub",
       duration: "05.2025 - 06.2025",
       description: (
-        <p className="font-mono text-[15px] leading-relaxed text-gray-800 dark:text-gray-100 whitespace-pre-line max-w-3xl">
+        <p className="font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-400 whitespace-pre-line max-w-3xl">
           <span className="font-semibold text-green-500">
             💰 Online Bank — All-in-One Finance Hub
           </span>
@@ -214,7 +214,7 @@ export default function ProjectCard() {
       title: "ChatApp",
       duration: "09.2024 - 10.2024",
       description: (
-        <p className="font-mono text-[15px] leading-relaxed text-gray-800 dark:text-gray-100 whitespace-pre-line max-w-3xl">
+        <p className="font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-400 whitespace-pre-line max-w-3xl">
           <span className="font-semibold text-green-500">
             💬 Real-Time Chat Application — Connect Instantly
           </span>

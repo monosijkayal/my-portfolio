@@ -182,7 +182,7 @@ export default function EducationTimeline() {
 
   // ---------------- COMPONENT RETURN ----------------
   return (
-    <section className="w-full max-w-3xl pt-3  border-r border-l">
+    <section className="w-full max-w-3xl pt-3  border-r border-l text-[13px]">
       {/* ---------------- HACKATHONS ---------------- */}
       <div className="w-full max-w-3xl border-b">
         <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5">
@@ -216,7 +216,7 @@ export default function EducationTimeline() {
 
                   <AccordionContent>
                     {item.details && (
-                      <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 dark:text-gray-500 space-y-1">
+                      <ul className="list-disc ml-5 mt-3 text-[13px] font-mono text-gray-700 dark:text-gray-500 space-y-1">
                         {item.details.map((d, idx) => (
                           <li key={idx}>{d}</li>
                         ))}
@@ -277,7 +277,7 @@ export default function EducationTimeline() {
 
                   <AccordionContent>
                     {item.details && (
-                      <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 dark:text-gray-500 space-y-1">
+                      <ul className="list-disc ml-5 mt-3 text-[13px] font-mono text-gray-700 dark:text-gray-500 space-y-1">
                         {item.details.map((d, idx) => (
                           <li key={idx}>{d}</li>
                         ))}
@@ -351,7 +351,7 @@ export default function EducationTimeline() {
                   </div>
 
                   {item.details && (
-                    <ul className="list-disc ml-5 mt-3 text-sm font-mono text-gray-700 dark:text-gray-500 space-y-1">
+                    <ul className="list-disc ml-5 mt-3 text-[13px] font-mono text-gray-700 dark:text-gray-500 space-y-1">
                       {item.details.map((d, idx) => (
                         <li key={idx}>{d}</li>
                       ))}

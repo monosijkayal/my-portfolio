@@ -14,7 +14,6 @@ export default function Navbar() {
     { name: "Home", path: "#hero" },
     { name: "About", path: "#about" },
     { name: "Projects", path: "#projects" },
-    { name: "CLI Mode", path: "#contact" },
   ];
 
   // Smooth scroll handler

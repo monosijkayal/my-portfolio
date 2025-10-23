@@ -64,13 +64,13 @@ export default function Home() {
       {/* //persoal info section */}
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
       <div className="flex justify-center items-center  border border-gray-200 dark:border-[#181818]">
-        <div className="flex flex-col w-full max-w-3xl -gap-2 font-mono">
+        <div className="flex flex-col w-full max-w-3xl -gap-2 font-mono ">
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 ">
             <div className="flex size-7 items-center justify-center rounded-md border border-gray-100 dark:border-[#282828]">
               <CodeXml className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />
             </div>
 
-            <h1 className="text-sm items-center content-center">
+            <h1 className="text-[13px] items-center content-center">
               Aspiring Full Stack Developer | Building Modern Web Experiences
             </h1>
           </div>
@@ -78,7 +78,7 @@ export default function Home() {
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
               <MapPin className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
-            <h1 className="text-sm items-center content-center">
+            <h1 className="text-[13px] items-center content-center">
               Kolkata, India
             </h1>
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828] ">
               <Phone className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
-            <h1 className="text-sm items-center content-center">
+            <h1 className="text-[13px] items-center content-center">
               +91 90511 09596
             </h1>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
               <Mail className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
-            <h1 className="text-sm items-center content-center">
+            <h1 className="text-[13px] items-center content-center">
               monosijkayal@gmail.com
             </h1>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="flex border-green-200 dark:border-[#4C763B] items-center gap-0.5 bg-green-100 dark:bg-[#043915] px-1 py-0.1 rounded-sm hover:bg-green-200 dark:hover:bg-[#064a1d] transition"
                 >
-                  <h1 className="text-sm text-green-700 dark:text-[#F8F7BA] text-shadow-sm">
+                  <h1 className="text-[13px] text-green-700 dark:text-[#F8F7BA] text-shadow-sm">
                     Resume
                   </h1>
                   <ArrowUpRight className="size-3 text-green-700 dark:text-[#B0CE88]" />
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
               <Mars className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />{" "}
             </div>
-            <h1 className="text-sm items-center content-center">He / Him</h1>
+            <h1 className="text-[13px] items-center content-center">He / Him</h1>
           </div>
         </div>
       </div>
@@ -233,7 +233,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center border-b">
         <div className="flex w-full max-w-3xl border-r border-l  border-gray-200 dark:border-[#181818] p-6 bg-white dark:bg-black">
-          <p className="font-mono text-[15px] leading-relaxed text-gray-800 dark:text-gray-100 max-w-3xl mx-auto whitespace-pre-line">
+          <p className="font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-100 max-w-3xl mx-auto whitespace-pre-line">
             Hello, World! I’m{" "}
             <span className="font-semibold">Monosij Kayal</span> — a passionate
             <span className="text-green-500"> Full-Stack Developer</span> driven
