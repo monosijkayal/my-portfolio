@@ -41,12 +41,12 @@ export default function Home() {
               {/* Right side: name and role */}
               <div className="flex flex-col justify-center text-left border-black w-full ">
                 <div className="border-b dark:border-[#181818] border-gray-200 p-2">
-                  <h1 className="text-2xl md:text-4xl font-mono font-semibold dark:text-white text-[#181818]">
+                  <h1 className="text-2xl md:text-4xl font-semibold dark:text-white text-[#181818]">
                     Monosij Kayal
                   </h1>
                 </div>
 
-                <div className="p-2 border-b">
+                <div className="p-2 border-b font-mono">
                   <WordRotate
                     className="text-gray-500 text-sm md:text-base"
                     words={[
@@ -64,7 +64,7 @@ export default function Home() {
       {/* //persoal info section */}
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
       <div className="flex justify-center items-center  border border-gray-200 dark:border-[#181818]">
-        <div className="flex flex-col w-full max-w-3xl -gap-2">
+        <div className="flex flex-col w-full max-w-3xl -gap-2 font-mono">
           <div className=" relative flex flex-row w-full max-w-3xl border-r border-l gap-2 p-3 ">
             <div className="flex size-7 items-center justify-center rounded-md border border-gray-100 dark:border-[#282828]">
               <CodeXml className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />
@@ -147,7 +147,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">LinkedIn</h1>
-                    <p className="text-gray-600">@monosijkayal</p>
+                    <p className="text-gray-600 font-mono">@monosijkayal</p>
                   </div>
                 </div>
                 <ArrowUpRight className="ml-4 size-4" />
@@ -168,7 +168,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">Twitter</h1>
-                    <p className="text-gray-600">@monosijkayal</p>
+                    <p className="text-gray-600 font-mono">@monosijkayal</p>
                   </div>
                 </div>
                 <ArrowUpRight className="ml-4 size-4" />
@@ -189,7 +189,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">Leetcode</h1>
-                    <p className="text-gray-600">@monosijkayal</p>
+                    <p className="text-gray-600 font-mono">@monosijkayal</p>
                   </div>
                 </div>
                 <ArrowUpRight className="ml-4 size-4" />
@@ -210,7 +210,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">Github</h1>
-                    <p className="text-gray-600">@monosijkayal</p>
+                    <p className="text-gray-600 font-mono">@monosijkayal</p>
                   </div>
                 </div>
                 <ArrowUpRight className="ml-4 size-4" />
@@ -221,7 +221,10 @@ export default function Home() {
       </div>
 
       {/* //About section  */}
-      <div id = "about" className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
+      <div
+        id="about"
+        className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"
+      ></div>
       <div className="w-full h-10 border-b border-t flex items-center justify-center ">
         <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
           {" "}
@@ -230,24 +233,46 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center border-b">
         <div className="flex w-full max-w-3xl border-r border-l  border-gray-200 dark:border-[#181818] p-6 bg-white dark:bg-black">
-          <p className="text-sm">
-            Hello, World! I’m Monosij Kayal — a passionate Full-Stack Developer
-            driven by the mission to craft scalable, high-performance, and
-            visually engaging web applications that make technology feel
-            effortless for users. With a strong foundation in React, Node.js,
-            MongoDB, and Tailwind CSS, I specialize in building end-to-end web
-            experiences that balance functionality with clean, modern design. My
-            journey began with a curiosity for how the web works, and over time,
-            it evolved into a deep interest in Web3 and blockchain development,
+          <p className="font-mono text-[15px] leading-relaxed text-gray-800 dark:text-gray-100 max-w-3xl mx-auto whitespace-pre-line">
+            Hello, World! I’m{" "}
+            <span className="font-semibold">Monosij Kayal</span> — a passionate
+            <span className="text-green-500"> Full-Stack Developer</span> driven
+            by the mission to craft scalable, high-performance, and visually
+            engaging web applications that make technology feel effortless for
+            users.
+            <br />
+            <br />
+            With a strong foundation in{" "}
+            <span className="text-blue-500">React</span>,{" "}
+            <span className="text-yellow-500">Node.js</span>,
+            <span className="text-emerald-500"> MongoDB</span>, and{" "}
+            <span className="text-cyan-400">Tailwind CSS</span>, I specialize in
+            building end-to-end web experiences that balance functionality with
+            clean, modern design.
+            <br />
+            <br />
+            My journey began with a curiosity for how the web works, and over
+            time, it evolved into a deep interest in{" "}
+            <span className="text-purple-400">Web3</span> and{" "}
+            <span className="text-indigo-400">blockchain development</span>,
             where I’m now exploring decentralized applications, smart contracts,
-            and blockchain mining concepts. Beyond code, I’m constantly
-            improving my problem-solving and logical thinking skills — striving
-            every day to become a faster, more efficient engineer. I believe
-            that great software comes from the perfect mix of creativity,
-            precision, and persistence. One of my ongoing goals is to bridge the
-            gap between Web2 and Web3, blending modern web technologies with the
-            decentralized future of the internet. Let’s connect and build
-            something impactful together
+            and blockchain mining concepts.
+            <br />
+            <br />
+            Beyond code, I’m constantly improving my problem-solving and logical
+            thinking skills — striving every day to become a faster, more
+            efficient engineer. I believe that great software comes from the
+            perfect mix of creativity, precision, and persistence.
+            <br />
+            <br />
+            One of my ongoing goals is to bridge the gap between Web2 and Web3,
+            blending modern web technologies with the decentralized future of
+            the internet.
+            <br />
+            <br />
+            <span className="italic text-gray-500 dark:text-gray-400">
+              Let’s connect and build something impactful together!
+            </span>
           </p>
         </div>
       </div>
