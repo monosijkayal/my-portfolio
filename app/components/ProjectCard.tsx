@@ -68,8 +68,92 @@ export default function ProjectCard() {
       image: "/couplespoint.png",
       title: "Couplespoint",
       duration: "11.2024 - present",
-      description:
-        "A React + Tailwind CSS app where users can select, copy, and save custom colors. It includes gradient generation and background previews to help users visualize designs.",
+      description: (
+        <p className="font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-100 max-w-3xl mx-auto whitespace-pre-line">
+          <span className="font-semibold text-pink-500">CouplesPoint.life</span>{" "}
+          is an all-in-one lifestyle platform designed exclusively for couples —
+          blending technology, creativity, and personalization into one unified
+          experience. The platform helps couples plan, gift, celebrate, and
+          create memories together in fun and meaningful ways. Built with{" "}
+          <span className="text-blue-500">React</span>,
+          <span className="text-sky-500"> Tailwind CSS</span>, and AI-powered
+          modules, it transforms how modern relationships organize and celebrate
+          love.
+          <br />
+          <br />
+          <span className="text-pink-400 font-semibold">
+            🎁 Gift Finder + Price Comparison
+          </span>
+          <br />
+          Discover thoughtful gifts through AI-driven recommendations that learn
+          from your partner’s likes, recent purchases, and upcoming events.
+          Compare prices across Amazon, Flipkart, Meesho, and Nykaa. Save gifts
+          to your wishlist, set reminders, or even earn affiliate rewards — all
+          from a single dashboard.
+          <br />
+          <br />
+          <span className="text-pink-400 font-semibold">
+            📍 Date Planner (Location + Budget Based)
+          </span>
+          <br />
+          Simply enter your city, interests, and budget to get complete date
+          itineraries including cafés, parks, spas, and event suggestions.
+          Couples can even book a full surprise plan in one click, with
+          partnerships from local vendors for exclusive discounts and deals.
+          <br />
+          <br />
+          <span className="text-pink-400 font-semibold">
+            🌐 Customized Website Surprise Builder
+          </span>
+          <br />A one-of-a-kind module where users can create a personalized
+          romantic website for their partner in just 60 seconds. Upload a name,
+          image, and message, and the system auto-generates a beautifully
+          animated landing page with a custom share link — e.g.,{" "}
+          <span className="text-purple-400">priya.couplespoint.life</span>.
+          Users can even integrate playlists, galleries, countdowns, and “Open
+          at Midnight” surprise messages. Optionally, they can purchase custom
+          domains like
+          <span className="text-purple-400"> forpriya.com</span> via GoDaddy or
+          Namecheap APIs.
+          <br />
+          <br />
+          <span className="text-pink-400 font-semibold">
+            ❤️ Couple Timeline / Journey Tracker
+          </span>
+          <br />
+          A private digital scrapbook for couples — track relationship
+          milestones, anniversaries, travel logs, and photos, all within a
+          shared timeline. Everything stays private between the couple, with
+          optional public sharing for memorable highlights.
+          <br />
+          <br />
+          <span className="text-pink-400 font-semibold">
+            🛍️ Online Store & Affiliate Gift Shop
+          </span>
+          <br />
+          Browse curated romantic products filtered by occasion and budget.
+          Includes a built-in price comparison widget and the ability to order
+          personalized gift boxes — a future revenue stream for the platform.
+          <br />
+          <br />
+          <span className="text-pink-400 font-semibold">
+            🧩 Gamified Experience
+          </span>
+          <br />
+          Couples earn badges like “Romantic Hero” or “Surprise King” and
+          collect points for sending gifts, planning dates, or using features
+          regularly. A playful leaderboard adds a fun, competitive twist while
+          maintaining full privacy control.
+          <br />
+          <br />
+          <span className="text-emerald-500 font-semibold">
+            In essence, CouplesPoint.life
+          </span>
+          redefines digital romance — merging gifting, planning,
+          personalization, and gamification into one elegant ecosystem built to
+          make love interactive, organized, and endlessly creative.
+        </p>
+      ),
       link: "https://github.com/monosijkayal/couplespoint",
     },
     {
@@ -208,6 +292,93 @@ export default function ProjectCard() {
         </p>
       ),
       link: "online-bank-opal.vercel.app/",
+    },
+    {
+      image: "/pixai.png",
+      title: "PixAI",
+      duration: "05.2025 - 06.2025",
+      description: (
+        <p className="font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-100 max-w-3xl mx-auto whitespace-pre-line">
+          <span className="font-semibold text-indigo-500">PixAI</span> is an
+          innovative
+          <span className="text-purple-500">
+            {" "}
+            AI-powered Text-to-Image Generator
+          </span>
+          application designed to turn creative text prompts into stunning,
+          high-quality images using the power of the
+          <span className="text-pink-500"> ClipDrop API</span>. Built as a
+          <span className="text-blue-500"> Full Stack SaaS platform</span>, it
+          seamlessly combines intelligent automation with modern web design,
+          offering creators, developers, and businesses a new way to visualize
+          ideas.
+          <br />
+          <br />
+          Developed with the
+          <span className="text-green-500"> MERN stack</span> —
+          <span className="text-emerald-400">MongoDB</span>,
+          <span className="text-emerald-400">Express</span>,
+          <span className="text-emerald-400">React</span>, and
+          <span className="text-emerald-400">Node.js</span> — PixAI provides a
+          smooth and secure experience supported by
+          <span className="text-orange-400"> Razorpay integration</span> for
+          credit-based payments. With its responsive and scalable architecture,
+          PixAI bridges creativity and technology, making AI image generation
+          accessible to everyone.
+          <br />
+          <br />
+          <span className="text-indigo-400 font-semibold">🚀 Key Features</span>
+          <br />
+          🌐 <span className="text-blue-500">Modern User Interface:</span> A
+          sleek and responsive design that ensures smooth navigation across all
+          devices.
+          <br />
+          🤖{" "}
+          <span className="text-purple-500">
+            AI-Powered Text-to-Image Generation:
+          </span>
+          Generate high-quality visuals using the ClipDrop API from simple text
+          prompts.
+          <br />
+          💰 <span className="text-amber-400">Credit-Based System:</span> Users
+          start with free credits and can easily purchase more using Razorpay’s
+          secure payment gateway.
+          <br />
+          🔐 <span className="text-green-400">Secure Authentication:</span> Full
+          user account creation, login, and password recovery with data
+          protection.
+          <br />
+          🧩{" "}
+          <span className="text-pink-400">Scalable Database Integration:</span>
+          MongoDB stores user profiles, credits, and transactions efficiently.
+          <br />
+          📱 <span className="text-blue-400">Responsive Design:</span> Fully
+          optimized for desktop, tablet, and mobile users.
+          <br />
+          📊 <span className="text-emerald-400">Purchase Management:</span>{" "}
+          Monitor credit usage and transaction history via an intuitive
+          dashboard.
+          <br />
+          ⚙️ <span className="text-cyan-400">
+            Efficient API Integration:
+          </span>{" "}
+          Reliable backend communication ensures fast, secure image generation.
+          <br />
+          🧱 <span className="text-orange-400">Modular Architecture:</span>{" "}
+          Clean, scalable, and maintainable codebase designed for long-term
+          product growth.
+          <br />
+          <br />
+          <span className="text-emerald-500 font-semibold">
+            In essence, PixAI
+          </span>{" "}
+          merges the power of artificial intelligence with modern web
+          technologies — delivering an intuitive, high-performance platform that
+          transforms imagination into visually stunning art with just a few
+          words.
+        </p>
+      ),
+      link: "https://pixai-io.vercel.app/",
     },
     {
       image: "/chatapp.png",

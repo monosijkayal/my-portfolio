@@ -325,7 +325,7 @@ export default function Home() {
             {" "}
             <div className="flex items-center gap-2">
               <span>Projects</span>
-              <span className="text-gray-400 text-sm">(5)</span>{" "}
+              <span className="text-gray-400 text-sm">(6)</span>{" "}
             </div>
           </div>
         </div>
