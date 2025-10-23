@@ -521,7 +521,7 @@ export default function ProjectCard() {
                 </div>
 
                 {/* Hidden description (expands on click) */}
-                <AccordionContent className="px-6 mt-4 pb-4 text-gray-700 dark:text-gray-500 font-mono">
+                <AccordionContent className="px-6 mt-4 pb-4 text-gray-700 dark:text-gray-500 font-mono ">
                   {project.description}
                 </AccordionContent>
               </AccordionItem>

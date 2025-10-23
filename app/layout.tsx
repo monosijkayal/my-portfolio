@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "./components/theme-provider";
 import Navbar from "./components/Navbar";
+import LenisProvider from "./components/LenisProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,20 +27,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} font-sans`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex justify-center min-h-screen">
-            {/* Common width + borders */}
-            <div className="w-full max-w-full">
-              <Navbar />
-              <main>{children}</main>
+          {/* ✅ LenisProvider goes INSIDE body */}
+          <LenisProvider>
+            <div className="flex justify-center min-h-screen">
+              <div className="w-full max-w-full">
+                <Navbar />
+                <main>{children}</main>
+              </div>
             </div>
-          </div>
+          </LenisProvider>
         </ThemeProvider>
       </body>
     </html>
