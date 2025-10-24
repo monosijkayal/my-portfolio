@@ -6,46 +6,39 @@ import { ArrowUpRight, ChevronDown, ChevronUp } from "lucide-react";
 const Certificates = () => {
   const certificates = [
     {
-      image: "/cert1.png",
+      image: "/ardent.jpeg",
       title: "Full Stack Web Development",
       time: "Issued March 2025 by Ardent Computech Pvt. Ltd.",
       company: "Coursera",
       link: "https://drive.google.com/file/d/1NdgAmF9X-nz_itPfK_2c8q5V3P73U-QV/preview",
     },
     {
-      image: "/cert2.png",
+      image: "/learnyard.jpg",
       title: "DSA Course - The Complete Guide",
       time: "Issued Mar 2024 by Learnyard",
       company: "Udemy",
       link: "https://drive.google.com/file/d/1OLECvQl3K5OgLifQa114ojSh2IDMZPUy/view?usp=drive_link",
     },
     {
-      image: "/cert3.png",
+      image: "/ardent.jpeg",
       title: "Internet of Things (IoT)",
       time: "Issued May 2024 by Ardetnt Computech Pvt. Ltd.",
       company: "edX",
       link: "https://drive.google.com/file/d/1Ni27WGtafR84FDuONK0uxZPkDQDhfZzt/preview",
     },
     {
-      image: "/cert4.png",
+      image: "/nptel.jpg",
       title: "Computer architecture (COA)",
       time: "Issued June 2024 by NPTEL",
       company: "Codecademy",
       link: "https://drive.google.com/file/d/1Jzw4ZMO_9T_9UlNYGYfhHlmvgj2SA6FQ/preview",
     },
     {
-      image: "/cert5.png",
+      image: "/nptel.jpg",
       title: "JAVA course",
       time: "Issued July 2024 by NPTEL",
       company: "Udemy",
-      link: "https://www.udemy.com/certificate/TS222",
-    },
-    {
-      image: "/cert6.png",
-      title: "Next.js Fundamentals",
-      time: "Issued Aug 2024 by Vercel",
-      company: "Vercel",
-      link: "https://vercel.com/certificates/NEXT333",
+      link: "https://drive.google.com/file/d/1VZQooan1PMwulQN8R6I0-Hab-2fE5ASx/preview",
     },
   ];
 
