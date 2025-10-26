@@ -7,11 +7,11 @@ It serves as a central hub where visitors can learn more about me, explore my wo
 ---
 
 ## 🚀 Features
-- Responsive and modern UI design  
-- About section with background and skills  
-- Projects showcase with links and descriptions  
-- Contact form / social links  
-- Smooth animations and transitions  
+- Responsive and modern UI design  . 
+- About section with background and skills  . 
+- Projects showcase with links and descriptions  . 
+- Contact form / social links  . 
+- Smooth animations and transitions  . 
 
 ---
 
