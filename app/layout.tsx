@@ -34,7 +34,6 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
         >
           {/* ✅ LenisProvider goes INSIDE body */}
           <LenisProvider>

@@ -1,17 +1,27 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
-import { Button } from "@/app/components/ui/button"
+import * as React from "react";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/app/components/ui/button";
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
 
-  // Function to toggle between light and dark
+  React.useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
+  const isDark = resolvedTheme === "dark";
+
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light")
-  }
+    // add a short fade effect to smooth the flash
+    document.documentElement.classList.add("theme-fade");
+    setTheme(isDark ? "light" : "dark");
+    setTimeout(() => {
+      document.documentElement.classList.remove("theme-fade");
+    }, 50); // duration should match the CSS transition
+  };
 
   return (
     <Button
@@ -19,12 +29,24 @@ export function ModeToggle() {
       size="icon"
       onClick={toggleTheme}
       aria-label="Toggle theme"
+      className="relative w-10 h-10 p-2"
     >
-      {/* Sun icon for light mode */}
-      <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-
-      {/* Moon icon for dark mode */}
-      <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <Sun
+        aria-hidden
+        className={`absolute inset-0 m-auto h-5 w-5 transition-all duration-50 ease-in-out ${
+          isDark
+            ? "rotate-90 scale-0 opacity-0"
+            : "rotate-0 scale-100 opacity-100"
+        }`}
+      />
+      <Moon
+        aria-hidden
+        className={`absolute inset-0 m-auto h-5 w-5 transition-all duration-50 ease-in-out ${
+          isDark
+            ? "rotate-0 scale-100 opacity-100"
+            : "-rotate-90 scale-0 opacity-0"
+        }`}
+      />
     </Button>
-  )
+  );
 }
