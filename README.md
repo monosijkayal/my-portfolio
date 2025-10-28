@@ -17,10 +17,10 @@ It serves as a central hub where visitors can learn more about me, explore my wo
 
 ## 🛠️ Tech Stack
 - **Frontend:** NextJs, Tailwind CSS, 
-- **Framework/Libraries:** React (or any other framework you used)  
-- **Styling:** Tailwind CSS / Bootstrap / Custom CSS  
+- **Framework/Libraries:** React (or any other framework you used)  ,
+- **Styling:** Tailwind CSS / Bootstrap / Custom CSS  ,
 - **Deployment:** GitHub Pages / Vercel / Netlify  
-
+,
 ---
 
 ## 📸 Preview
