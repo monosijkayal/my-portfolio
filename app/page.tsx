@@ -31,9 +31,9 @@ export default function Home() {
               <div className="flex justify-center items-center w-25 h-20 md:w-60 md:h-44  border-r">
                 <div className="flex justify-center items-center w-20 h-20 md:w-44 md:h-44 border border-gray-200 rounded-full overflow-hidden">
                   <img
-                    src="ProfileImge.png"
+                    src="profileImage.jpg"
                     alt="Profile"
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-full h-full object-cover rounded-full object-[center_30%]"
                   />
                 </div>
               </div>
@@ -226,7 +226,7 @@ export default function Home() {
         className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"
       ></div>
       <div className="w-full h-10 border-b border-t flex items-center justify-center ">
-        <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+        <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-3xl">
           {" "}
           About{" "}
         </div>
@@ -281,7 +281,7 @@ export default function Home() {
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
       <div className="flex flex-col justify-center items-center ">
         <div className="w-full h-10 border-b border-t flex items-center justify-center ">
-          <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+          <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-3xl">
             {" "}
             My Github Contribution{" "}
           </div>
@@ -295,7 +295,7 @@ export default function Home() {
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300 border-t dark:border-[#181818]"></div>
       <div className="w-full flex-col border-b border-t flex items-center justify-center ">
         <div className="w-full h-10 border-b flex items-center justify-center ">
-          <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+          <div className="w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-3xl">
             {" "}
             Stack{" "}
           </div>
@@ -309,7 +309,7 @@ export default function Home() {
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300"></div>
       <div className="w-full flex-col flex items-center justify-center ">
         <div className="w-full border-b border-t h-10 border-gray-200 dark:border-[#181818] flex flex-col items-center justify-center ">
-          <div className=" w-full h-10 max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+          <div className=" w-full h-10 max-w-3xl border-r border-l flex items-center px-2 font-bold text-3xl">
             {" "}
             Experience{" "}
           </div>
@@ -321,7 +321,7 @@ export default function Home() {
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300 border-t border-gray-200 dark:border-[#181818]"></div>
       <div className="w-full flex-col flex items-center justify-center ">
         <div className="w-full h-10 border-b border-t flex flex-col items-center justify-center ">
-          <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+          <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-3xl">
             {" "}
             <div className="flex items-center gap-2">
               <span>Projects</span>
@@ -338,7 +338,7 @@ export default function Home() {
       <div className="w-full  h-10 bg-[repeating-linear-gradient(132deg,#f5f5f5_0,#f5f5f5_1px,transparent_2px,transparent_7px)] dark:bg-[repeating-linear-gradient(132deg,#181818_0,#181818_1px,transparent_2px,transparent_7px)] transition-colors duration-300 border-t dark:border-[#181818]"></div>
       <div className="w-full flex-col flex items-center justify-center ">
         <div className="w-full h-10 border-b border-t flex flex-col items-center justify-center ">
-          <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-2xl">
+          <div className=" w-full h-full max-w-3xl border-r border-l flex items-center px-2 font-bold text-3xl">
             {" "}
             <div className="flex items-center gap-2">
               <span>Certificates</span>
