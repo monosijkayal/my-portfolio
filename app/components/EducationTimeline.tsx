@@ -162,7 +162,7 @@ export default function EducationTimeline() {
         "Sonarpur Vidyapith (Secondary & Higher Secondary education) — Sonarpur, West Bengal, India",
       period: "2015 - 2022",
       marksheet:
-        "https://drive.google.com/file/d/1SHyMa5vdXGwFiUK1hdveIwrJfI-8cGiM/preview",
+      "https://drive.google.com/file/d/1SHyMa5vdXGwFiUK1hdveIwrJfI-8cGiM/preview",
       details: [
         "Completed Higher Secondary education in Pure Science stream, focusing on Physics, Chemistry, Mathematics, and Computer Science.",
         "Marks obtained: 82% in Higher Secondary and 76% in Secondary examinations.",
@@ -176,7 +176,7 @@ export default function EducationTimeline() {
         "Baikunthapur Vidyapith (Primary education) — Sonarpur, West Bengal, India",
       period: "2008 - 2014",
       marksheet:
-        "https://drive.google.com/file/d/your-btech-marksheet-link/view",
+      "https://drive.google.com/file/d/your-btech-marksheet-link/view",
     },
   ];
 
@@ -316,22 +316,11 @@ export default function EducationTimeline() {
         {education.map((item, i) => (
           <div key={i} className="relative pl-10 mb-8">
             {/* Icon */}
-            <div
-              className={`absolute -left-[14px] flex size-7 items-center justify-center rounded-md border ${i === 0
-                  ? "border-[#00FF88] shadow-[0_0_6px_#00FF88,0_0_12px_#00FF88,0_0_18px_#00FF88]"
-                  : "border-gray-100 dark:border-[#282828]"
-                }`}
-            >
-              <Calendar
-                className={`size-6 p-1 rounded-md border bg-gray-100 dark:bg-[#303030]
-          ${i === 0
-                    ? "text-[#00FF88] border-[#00FF88] shadow-[0_0_4px_#00FF88,0_0_8px_#00FF88]"
-                    : "text-gray-500 border-gray-300 dark:text-gray-300 dark:border-[#404040]"
-                  }`}
-              />
+            <div className="absolute -left-[14px] flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
+              <GraduationCap className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />
             </div>
 
-            {/* The rest of your education item content */}
+            {/* Accordion */}
             <Accordion type="single" collapsible>
               <AccordionItem value={`education-${i}`} className="border-none">
                 <div className="flex justify-between items-center">
@@ -345,13 +334,46 @@ export default function EducationTimeline() {
                 </div>
 
                 <AccordionContent>
-                  {/* your marksheet, details, and skills code stays the same */}
+                <div className="w-20 mt-2 p-0.5 border-1 border-green-100 dark:border-[#043915]  rounded-sm cursor-pointer">
+                <div className="flex border border-green-200 dark:border-[#4C763B] items-center gap-0.5 bg-green-100 dark:bg-[#043915] px-1 py-0.1 rounded-sm">
+                  {item.marksheet && (
+                    <a
+                      href={item.marksheet}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-600 hover:underline text-sm"
+                    >
+                      Marksheet
+                    </a>
+                                  
+                  )}
+                  </div>
+                  </div>
+
+                  {item.details && (
+                    <ul className="list-disc ml-5 mt-3 text-[13px] font-mono text-gray-700 dark:text-gray-500 space-y-1">
+                      {item.details.map((d, idx) => (
+                        <li key={idx}>{d}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {item.skills && (
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {item.skills.map((s, idx) => (
+                        <span
+                          key={idx}
+                          className="text-xs font-mono bg-gray-200 dark:bg-black border rounded-full px-2 py-1"
+                        >
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
         ))}
-
       </div>
     </section>
   );
