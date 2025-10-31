@@ -142,8 +142,8 @@ export default function Home() {
             >
               <div className="flex items-center justify-between border-b sm:border-b-0 sm:border-r p-4">
                 <div className="flex items-center space-x-4">
-                  <div className="flex justify-center items-center w-10 h-10">
-                    <img src="LinkedIn.png" alt="LinkedIn" />
+                  <div className="flex justify-center items-center w-10 h-10 border rounded-md border-gray-800">
+                    <img src="linkedIn icon.jpg" alt="LinkedIn" className = "rounded-md" />
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">LinkedIn</h1>
@@ -163,8 +163,8 @@ export default function Home() {
             >
               <div className="flex items-center justify-between border-b sm:border-b-0 p-4">
                 <div className="flex items-center space-x-4">
-                  <div className="flex justify-center items-center w-10 h-10">
-                    <img src="twitter.png" alt="Twitter" />
+                  <div className="flex justify-center items-center w-10 h-10 border rounded-md border-gray-800">
+                    <img src="twitter.png" alt="Twitter" className = "rounded-md" />
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">Twitter</h1>
@@ -184,8 +184,8 @@ export default function Home() {
             >
               <div className="flex items-center justify-between border-t sm:border-t sm:border-r p-4">
                 <div className="flex items-center space-x-4">
-                  <div className="flex justify-center items-center w-10 h-10">
-                    <img src="leetcode.jpg" alt="Leetcode" />
+                  <div className="flex justify-center items-center w-10 h-10 rounded-md border border-gray-800">
+                    <img src="leetcodeicon.png" alt="Leetcode" className = "rounded-md" />
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">Leetcode</h1>
@@ -205,8 +205,8 @@ export default function Home() {
             >
               <div className="flex items-center justify-between border-t sm:border-t p-4">
                 <div className="flex items-center space-x-4">
-                  <div className="flex justify-center items-center w-10 h-10">
-                    <img src="github.png" alt="Github" />
+                  <div className="flex justify-center items-center w-10 h-10 border rounded-md border-gray-800">
+                    <img src="github.png" alt="Github" className = "rounded-md"  />
                   </div>
                   <div className="flex flex-col">
                     <h1 className="font-semibold">Github</h1>
