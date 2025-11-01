@@ -259,17 +259,6 @@ export default function Home() {
             and blockchain mining concepts.
             <br />
             <br />
-            Beyond code, I’m constantly improving my problem-solving and logical
-            thinking skills — striving every day to become a faster, more
-            efficient engineer. I believe that great software comes from the
-            perfect mix of creativity, precision, and persistence.
-            <br />
-            <br />
-            One of my ongoing goals is to bridge the gap between Web2 and Web3,
-            blending modern web technologies with the decentralized future of
-            the internet.
-            <br />
-            <br />
             <span className="italic text-gray-500 dark:text-gray-400">
               Let’s connect and build something impactful together!
             </span>
