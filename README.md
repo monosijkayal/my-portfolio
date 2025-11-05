@@ -12,7 +12,6 @@ It serves as a central hub where visitors can learn more about me, explore my wo
 - Projects showcase with links and descriptions  . 
 - Contact form / social links  . 
 - Smooth animations and transitions  . 
-
 ---
 
 ## 🛠️ Tech Stack
