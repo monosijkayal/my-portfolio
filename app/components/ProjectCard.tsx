@@ -227,7 +227,7 @@ export default function ProjectCard() {
     },
     {
       image: "/onlinebank.png",
-      title: "Online Bank - All-in-One Finance Hub",
+      title: "Online Bank",
       duration: "05.2025 - 06.2025",
       description: (
         <p className="font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-400 whitespace-pre-line max-w-3xl">
