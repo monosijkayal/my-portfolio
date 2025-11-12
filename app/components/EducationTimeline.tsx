@@ -47,7 +47,6 @@ export default function EducationTimeline() {
       event: "Hexafalls Hackathon' 25",
       period: "June 2025",
       details: [
-        "Secured 2nd position among 50+ teams in JIS University’s internal hackathon.",
         "Developed a real-time chat app using NextJs and Tailwind CSS.",
         "Focused on authentication workflows and smooth user experience.",
         "Converts agricultural assets (like land, crops, equipment, or produce) into digital tokens.",
