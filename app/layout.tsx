@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Monosij Kayal | Portfolio",
   description: "My personal portfolio built with Next.js",
   icons: {
-    icon: "/profilefortitle.png",
+    icon: "/proflefortitle.png",
   },
 };
 

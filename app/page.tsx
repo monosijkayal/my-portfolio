@@ -48,7 +48,7 @@ export default function Home() {
 
                 <div className="p-2 border-b font-mono">
                   <WordRotate
-                    className="text-gray-500 text-sm md:text-base"
+                    className="text-gray-500 text-xs md:text-base"
                     words={[
                       "Web Developer",
                       "Building the Web, One Pixel at a Time",
