@@ -6,9 +6,61 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/app/components/ui/accordion";
-import { GraduationCap, Trophy, Calendar } from "lucide-react";
+import { GraduationCap, Trophy, Calendar, Briefcase } from "lucide-react";
 
 export default function EducationTimeline() {
+  // ---------------- WORKING EXPERIENCE ----------------
+  const workingExperience = [
+    {
+      company: "WebSoftTechs",
+      website: "https://www.websofttechs.com/",
+      period: "3m",
+      role: "Junior Frontend Developer",
+      position: "INTERN",
+      duration: "02.2026-present",
+      details: [
+        "Developed responsive and modern web application interfaces using React and modern frontend development practices.",
+        "Enhanced UI/UX features for client-facing software products.",
+        "Used GitLab for version control, code collaboration, and project management in a team environment.",
+        "Integrated and tested REST APIs using Swagger for efficient backend communication and API understanding.",
+        "Collaborated with senior developers to implement scalable UI components, optimize performance, and fix production-level bugs.",
+        "Built reusable components and improved user experience with clean, maintainable, and responsive designs.",
+        "Gained practical experience with authentication systems, real-time features, and REST API integration in an agile development workflow.",
+      ],
+      skills: [
+        "Git & GitLab",
+        "Swagger",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "CSS",
+        "HTML",
+      ],
+    },
+    {
+      company: "Ardent Computech PVT. LTD",
+      website: "https://www.ardentcollaborations.com/internship-programs",
+      period: "2025",
+      role: "Web Developer Intern",
+      position: "INTERN",
+      duration: "1m",
+      details: [
+        "Currently studying for a Bachelor's degree in Computer Science.",
+        "Current CGPA: 8.5/10.",
+        "Language Proficiency: Bengali, Hindi, English.",
+      ],
+      skills: [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "Distributed Systems",
+        "Self-learning",
+        "Teamwork",
+        "Presentation",
+      ],
+    },
+  ];
   // ---------------- HACKATHONS ----------------
   const hackathons = [
     {
@@ -183,8 +235,97 @@ export default function EducationTimeline() {
   // ---------------- COMPONENT RETURN ----------------
   return (
     <section className="w-full max-w-3xl pt-3  border-r border-l text-[13px]">
-      {/* ---------------- HACKATHONS ---------------- */}
+      {/* ---------------- EXPERIENCE ---------------- */}
       <div className="w-full max-w-3xl border-b">
+        <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5">
+          <span>
+            <div className="w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-500"></div>
+          </span>
+          Experience
+        </h2>
+        <div className="relative ml-6 mb-10 pr-3">
+          {/* Gradient vertical border line */}
+          <div className="pointer-events-none absolute  top-0 bottom-0 w-[1px] rounded-full bg-gradient-to-b from-gray-300 via-gray-200 to-white dark:from-[#1e1e1e] dark:via-[#1e1e1e] dark:to-black" />
+          {workingExperience.map((item, i) => (
+            <div key={i} className="relative pl-10 mb-8">
+              {/* Icon */}
+              <div className="absolute -left-[14px] flex border size-7 items-center justify-center rounded-md border-gray-100 dark:border-[#282828]">
+                <Briefcase className="size-6 text-gray-500 border rounded-md p-1 bg-gray-100 dark:text-gray-300 dark:border-[#404040] dark:bg-[#303030]" />
+              </div>
+
+              {/* Accordion */}
+              <Accordion type="single" collapsible>
+                <AccordionItem value={`experience-${i}`} className="border-none">
+                  <div className="flex justify-between items-center">
+                    <div>
+                      <h3 className="text-lg font-semibold">
+                        {item.role} @{" "}
+                        {"website" in item && item.website ? (
+                          <a
+                            href={item.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline"
+                          >
+                            {item.company}
+                          </a>
+                        ) : (
+                          item.company
+                        )}
+                      </h3>
+                      <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-1.5">
+                        <span>{item.position}</span>
+                        <span className="text-gray-300 dark:text-gray-700">|</span>
+                        <span>
+                          {item.company === "WebSoftTechs" ? (
+                            <span className="inline-flex items-center gap-1">
+                              {item.duration.split("-")[0]} - <span className="text-xl leading-none">∞</span>
+                            </span>
+                          ) : (
+                            item.period
+                          )}
+                        </span>
+                        <span className="text-gray-300 dark:text-gray-700">|</span>
+                        <span>
+                          {item.company === "WebSoftTechs" ? item.period : item.duration}
+                        </span>
+                      </div>
+                    </div>
+                    <AccordionTrigger className="!no-underline hover:text-blue-600">
+                      <span className="sr-only">Expand</span>
+                    </AccordionTrigger>
+                  </div>
+
+                  <AccordionContent>
+                    {item.details && (
+                      <ul className="list-disc ml-5 mt-3 text-[13px] font-mono text-gray-700 dark:text-gray-500 space-y-1">
+                        {item.details.map((d, idx) => (
+                          <li key={idx}>{d}</li>
+                        ))}
+                      </ul>
+                    )}
+                    {item.skills && (
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {item.skills.map((s, idx) => (
+                          <span
+                            key={idx}
+                            className="text-xs bg-gray-200 font-mono dark:bg-black border rounded-full px-2 py-1"
+                          >
+                            {s}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ---------------- HACKATHONS ---------------- */}
+      <div className="w-full max-w-3xl border-b pt-3">
         <h2 className="text-xl font-semibold mb-4   flex items-center gap-9 pl-5">
           <span>
             <div className="w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-500"></div>

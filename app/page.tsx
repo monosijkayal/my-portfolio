@@ -105,7 +105,7 @@ export default function Home() {
             <div className="flex items-center justify-center p-0.5 border-1 border-green-100 dark:border-[#043915]  rounded-sm cursor-pointer">
               <div className="flex border border-green-200 dark:border-[#4C763B] items-center gap-0.5 bg-green-100 dark:bg-[#043915] px-1 py-0.1 rounded-sm">
                 <a
-                  href="https://drive.google.com/file/d/1ERWYZG7OOfryK2z5OohUFsMXnbqWGs5c/preview"
+                  href="https://drive.google.com/file/d/1xOCcPXQFEVhKk0I1X7vPFvrCPP8AvoFL/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex border-green-200 dark:border-[#4C763B] items-center gap-0.5 bg-green-100 dark:bg-[#043915] px-1 py-0.1 rounded-sm hover:bg-green-200 dark:hover:bg-[#064a1d] transition"
