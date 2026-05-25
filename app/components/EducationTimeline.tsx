@@ -45,9 +45,8 @@ export default function EducationTimeline() {
       position: "INTERN",
       duration: "1m",
       details: [
-        "Currently studying for a Bachelor's degree in Computer Science.",
-        "Current CGPA: 8.5/10.",
-        "Language Proficiency: Bengali, Hindi, English.",
+        "Developed a responsive authentication page using the MERN stack, implementing secure user login and registration features.",
+        "Integrated JWT for token-based authentication and bcrypt for password hashing, ensuring secure user data handling",
       ],
       skills: [
         "TypeScript",
