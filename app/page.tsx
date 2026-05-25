@@ -48,7 +48,7 @@ export default function Home() {
 
                 <div className="p-2 border-b font-mono">
                   <WordRotate
-                    className="text-gray-500 text-sm md:text-base"
+                    className="text-gray-500 text-xs md:text-base"
                     words={[
                       "Web Developer",
                       "Building the Web, One Pixel at a Time",
@@ -257,17 +257,6 @@ export default function Home() {
             <span className="text-indigo-400">blockchain development</span>,
             where I’m now exploring decentralized applications, smart contracts,
             and blockchain mining concepts.
-            <br />
-            <br />
-            Beyond code, I’m constantly improving my problem-solving and logical
-            thinking skills — striving every day to become a faster, more
-            efficient engineer. I believe that great software comes from the
-            perfect mix of creativity, precision, and persistence.
-            <br />
-            <br />
-            One of my ongoing goals is to bridge the gap between Web2 and Web3,
-            blending modern web technologies with the decentralized future of
-            the internet.
             <br />
             <br />
             <span className="italic text-gray-500 dark:text-gray-400">
